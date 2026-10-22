@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Максим Пронь — backend-разработчик</title>
+<meta name="description" content="Максим Пронь — C#/.NET и Python backend-разработчик из Санкт-Петербурга. Проекты, хакатоны, опыт и контакты.">
+<meta property="og:title" content="Максим Пронь — backend-разработчик">
+<meta property="og:description" content="C# · .NET · Python. Бэкенд и инфраструктура стартапа Нордкрофт, хакатоны и акселераторы.">
+<meta property="og:image" content="img/avatar.jpg">
+<meta name="theme-color" content="#0b0d10">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff7a45'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%230b0d10'%3EМП%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="nav-logo" href="#top">МП<span>.</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#about">Обо мне</a>
+    <a href="#experience">Опыт</a>
+    <a href="#projects">Проекты</a>
+    <a href="#labs">Учёба</a>
+    <a href="#journey">Достижения</a>
+    <a href="#skills">Навыки</a>
+    <a href="#life">Вне кода</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="icon-btn" id="themeBtn" aria-label="Сменить тему" title="Сменить тему">
+      <svg class="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <button class="icon-btn burger" id="burger" aria-label="Меню"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero wrap">
+  <div class="hero-text">
+    <div class="status reveal"><span class="dot"></span>Открыт к предложениям · стажировка / junior+</div>
+    <h1 class="hero-name reveal">Максим<br><span class="outline">Пронь</span></h1>
+    <p class="hero-role reveal">
+      <span class="mono">&gt;</span> <span id="typed">Backend-разработчик</span><span class="caret">_</span>
+    </p>
+    <p class="hero-lead reveal">
+      Пишу бэкенд на <b>C#/.NET</b> и <b>Python</b> и держу на себе инфраструктуру.
+      Полтора года в продакшене стартапа <b>Нордкрофт</b>, 2&nbsp;место на ТехноПитере,
+      пачка хакатонов и акселераторов. Студент ГУАП, Санкт-Петербург.
+    </p>
+    <div class="hero-cta reveal">
+      <a class="btn primary" href="https://t.me/Red1ann" target="_blank" rel="noopener">Написать в Telegram</a>
+      <a class="btn" href="Pron_Maksim_CV.pdf" download>Скачать резюме&nbsp;PDF</a>
+      <a class="btn ghost" href="https://github.com/Red1an" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+  <div class="hero-photo reveal">
+    <div class="photo-frame">
+      <img src="img/avatar.jpg" alt="Максим Пронь">
+    </div>
+    <div class="float-chip c1"><span class="mono">C#</span> .NET 9</div>
+    <div class="float-chip c2">🏆 2 место · ТехноПитер</div>
+    <div class="float-chip c3"><span class="mono">py</span> Python · ML</div>
+  </div>
+  <a class="scroll-hint" href="#about" aria-label="Листать вниз"><span></span></a>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="wrap stats">
+  <div class="stat reveal"><div class="stat-num"><span data-count="1.5" data-dec="1">0</span> года</div><div class="stat-label">backend в production параллельно с учёбой</div></div>
+  <div class="stat reveal"><div class="stat-num accent">2 место</div><div class="stat-label">акселератор ТехноПитер 2025</div></div>
+  <div class="stat reveal"><div class="stat-num"><span data-count="5">0</span></div><div class="stat-label">хакатонов и акселераторов с 2025 года</div></div>
+  <div class="stat reveal"><div class="stat-num"><span data-count="2">0</span> финала</div><div class="stat-label">«Цифра» и хакатон <b>«Время IT»</b> — питчили перед экспертами</div></div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="wrap section" id="about">
+  <div class="section-head reveal"><span class="section-num">01</span><h2>Обо мне</h2></div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>Мне 21, учусь на 4 курсе ГУАП по «Прикладной информатике». С июня 2025 года пишу бэкенд в стартапе
+        <b>Нордкрофт</b> — приложении для рыбаков, которое работает в проде: от схемы БД и бизнес-логики до
+        деплоя, CI/CD и разбора ошибок по логам.</p>
+      <p>Люблю брать задачу без готового ТЗ и вести её целиком — от проектирования до релиза.
+        На хакатонах обычно отвечаю за бэкенд и за то, чтобы команда успела к защите.</p>
+      <p>Сейчас хочу расти до <b>middle</b>: интересны высоконагруженные сервисы, распределённые системы,
+        надёжная эксплуатация — мониторинг, тесты, code review.</p>
+    </div>
+    <div class="about-cards">
+      <div class="mini-card reveal"><div class="mini-k">Город</div><div class="mini-v">Санкт-Петербург</div></div>
+      <div class="mini-card reveal"><div class="mini-k">Формат</div><div class="mini-v">офис · гибрид · удалённо</div></div>
+      <div class="mini-card reveal"><div class="mini-k">Учёба</div><div class="mini-v">ГУАП, выпуск 2027</div></div>
+      <div class="mini-card reveal"><div class="mini-k">Английский</div><div class="mini-v">B2</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="wrap section" id="experience">
+  <div class="section-head reveal"><span class="section-num">02</span><h2>Опыт</h2></div>
+
+  <article class="exp reveal">
+    <div class="exp-side">
+      <div class="exp-date">06/2025 — сейчас</div>
+      <div class="exp-place">Санкт-Петербург</div>
+    </div>
+    <div class="exp-body">
+      <div class="exp-title">Нордкрофт <span>· C#/.NET Backend Developer</span></div>
+      <div class="exp-sub">Продуктовый B2C-стартап, команда из 4 человек · <a href="https://app.nordkroft.ru" target="_blank" rel="noopener">app.nordkroft.ru ↗</a></div>
+      <ul class="bullets">
+        <li><b>REST API и бизнес-логика</b> на ASP.NET Core: пользователи, карта и места, отчёты с водоёмов, платежи.</li>
+        <li><b>PostgreSQL + EF Core</b>: проектирую схему данных, пишу LINQ-запросы и миграции.</li>
+        <li><b>Авторизация</b>: JWT и refresh-токены, гостевой доступ, внешний вход, подтверждение по email-коду.</li>
+        <li><b>Интеграции</b>: оплата через YooKassa с выдачей доступа к контенту, передача заявок партнёру в amoCRM.</li>
+        <li><b>Производительность</b>: Redis и in-memory cache, изображения через MinIO/S3 и presigned URLs.</li>
+        <li><b>Данные из Telegram</b>: batch- и realtime-обработка отчётов, нормализация и дедупликация.</li>
+        <li><b>Инфраструктура всех сервисов</b>: Docker Compose, Nginx, Linux, SSL, CI/CD на GitHub Actions, деплой и прод-диагностика.</li>
+      </ul>
+      <div class="tags">
+        <span>C#</span><span>.NET 9</span><span>ASP.NET Core</span><span>EF Core</span><span>PostgreSQL</span><span>Redis</span><span>S3</span><span>Docker</span><span>Nginx</span><span>GitHub Actions</span>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="wrap section" id="projects">
+  <div class="section-head reveal"><span class="section-num">03</span><h2>Проекты</h2></div>
+
+  <!-- Нордкрофт -->
+  <article class="project feature reveal">
+    <div class="project-info">
+      <div class="project-meta"><span class="pill accent">В продакшене</span><span class="pill">2025 — сейчас</span></div>
+      <h3>Нордкрофт</h3>
+      <p class="project-lead">Приложение для рыбаков: <b>поездка на рыбалку за 2 минуты</b> — карта мест с поиском,
+        прогноз клёва и погоды, отчёты с водоёмов, поездки и сообщество.</p>
+      <p>С проектом прошли три акселератора, взяли <b>2 место на ТехноПитере</b> и вышли в финал «Цифры».
+        Моя зона — весь бэкенд и инфраструктура.</p>
+      <div class="tags"><span>C#</span><span>ASP.NET Core</span><span>PostgreSQL</span><span>Redis</span><span>YooKassa</span><span>amoCRM</span><span>Docker</span></div>
+      <div class="project-links"><a class="link" href="https://app.nordkroft.ru" target="_blank" rel="noopener">Открыть приложение ↗</a></div>
+    </div>
+    <div class="project-visual devices">
+      <div class="laptop"><div class="laptop-screen"><img src="img/nk-landing.jpg" alt="Лендинг Нордкрофт" data-zoom></div><div class="laptop-base"></div></div>
+      <div class="phone"><img src="img/nk-app-mobile.jpg" alt="Карта мест в приложении Нордкрофт" data-zoom></div>
+    </div>
+  </article>
+
+  <!-- Балдёжный звук -->
+  <article class="project feature reverse reveal">
+    <div class="project-info">
+      <div class="project-meta"><span class="pill accent">Финал</span><span class="pill">Хакатон «Время IT» · ГУАП × Звук · 10/2026</span></div>
+      <h3>Балдёжный звук</h3>
+      <p class="project-lead">Общий плейлист для любой компании: участники предлагают треки и свайпают их,
+        в плейлисте — лучшие по рейтингу. Есть «Микс» с автодозаполнением и <b>сборный плейлист</b> из плейлистов групп.</p>
+      <p>Вышли в <b>финал</b> и питчили продукт перед экспертами: каждый из них сканировал QR и пробовал
+        приложение прямо во время защиты. Я был лидом бэкенда — структура сервиса, авторизация, плейлисты
+        и режимы вступления, сборные плейлисты с баллами групп, Docker + Nginx и презентация.</p>
+      <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL + pgvector</span><span>WebSocket</span><span>MAEST / MuLan</span><span>GigaChat</span><span>React</span><span>Docker</span></div>
+    </div>
+    <div class="project-visual stack">
+      <div class="phones-row">
+        <div class="phone sm"><img src="img/bz-meloman-card.jpg" alt="Голосование за трек" data-zoom></div>
+        <div class="phone sm up"><img src="img/bz-participant-board.jpg" alt="Рейтинг плейлиста" data-zoom></div>
+        <div class="phone sm"><img src="img/bz-newcomer-match.jpg" alt="Совпадение вкуса с группой" data-zoom></div>
+      </div>
+      <figure class="photo-card"><img src="img/vit-pitch.jpg" alt="Питч «Балдёжного звука» в финале хакатона" data-zoom><figcaption>Питч в финале «Времени IT»</figcaption></figure>
+    </div>
+  </article>
+
+  <!-- RLT.Hack -->
+  <article class="project feature reveal">
+    <div class="project-info">
+      <div class="project-meta"><span class="pill">Хакатон RLT.Hack · Росэлторг · 10/2026</span></div>
+      <h3>Подбор поставщиков для госзакупок</h3>
+      <p class="project-lead">Сервис подсказывает заказчику, <b>кого позвать на закупку</b>: кто реально подаст заявку
+        и сможет выиграть, и каких новых поставщиков привлечь ради конкуренции.</p>
+      <ul class="bullets">
+        <li>Обучил <b>модель ранжирования</b> (LightGBM, learning-to-rank) на 2 годах закупок: 600 тыс. лотов, 1 млн заявок.</li>
+        <li>Реальный победитель в нашем топ-10 в <b>53,5%</b> лотов против 31,4% у бейзлайна — на квартале, который модель не видела.</li>
+        <li>Написал поиск с объяснением, почему компания в выдаче, и вёл процессы в команде.</li>
+      </ul>
+      <div class="tags"><span>Python</span><span>LightGBM</span><span>scikit-learn</span><span>pandas</span><span>FastAPI</span><span>PostgreSQL</span></div>
+      <div class="project-links"><a class="link" href="https://github.com/Red1an/rlt_hakaton" target="_blank" rel="noopener">GitHub ↗</a></div>
+    </div>
+    <div class="project-visual stack">
+      <figure class="browser">
+        <div class="browser-bar"><i></i><i></i><i></i><span>Подбор поставщиков</span></div>
+        <img src="img/rlt-ui.jpg" alt="Интерфейс подбора поставщиков" data-zoom>
+      </figure>
+      <div class="caption">Выдача с объяснением «почему рекомендуем» · на скрине демо-данные</div>
+    </div>
+  </article>
+
+  <!-- small projects -->
+  <div class="grid-3">
+    <article class="card proj-card reveal">
+      <div class="proj-ico">⇄</div>
+      <h4>ReportBroker</h4>
+      <p>Сервис отчётов по конверсии на <b>Clean Architecture</b>: запросы через RabbitMQ, ответ по gRPC,
+        дедупликация одинаковых отчётов, кэш статусов в Redis, юнит-тесты.</p>
+      <div class="tags sm"><span>C#</span><span>RabbitMQ</span><span>gRPC</span><span>Redis</span></div>
+      <a class="link" href="https://github.com/Red1an/ReportBroker" target="_blank" rel="noopener">GitHub ↗</a>
+    </article>
+    <article class="card proj-card reveal">
+      <figure class="lab-img"><img src="img/lifehub.jpg" alt="Главный экран LifeHub" data-zoom loading="lazy"></figure>
+      <h4>LifeHub</h4>
+      <p>Личный хаб мини-приложений: финансы, заметки, привычки, планировщик, голосовой помощник «Джарвис»
+        и <b>тренажёр гитары</b>. Работает на ПК и с телефона, модули пишет нейросеть по SDK хаба.</p>
+      <div class="tags sm"><span>TypeScript</span><span>Node.js</span><span>React</span><span>SQLite</span></div>
+      <a class="link" href="https://github.com/Red1an/LifeHub" target="_blank" rel="noopener">GitHub ↗</a>
+    </article>
+    <article class="card proj-card reveal">
+      <div class="proj-ico">{ }</div>
+      <h4>Клиент-сервер на C++</h4>
+      <p>Итоговый проект IT-школы ПРОТЕЙ: многопоточный сервер на сокетах считает расстояние до клиентов,
+        интерактивный клиент с конфигом из JSON/CLI, тесты.</p>
+      <div class="tags sm"><span>C++</span><span>CMake</span><span>Sockets</span><span>Threads</span></div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ LABS ============ -->
+<section class="wrap section" id="labs">
+  <div class="section-head reveal"><span class="section-num">04</span><h2>Учебные проекты</h2></div>
+  <p class="section-lead reveal">Лабы, которые я делаю не «на сдачу», а как маленькие исследования.</p>
+
+  <article class="project feature lab reveal">
+    <div class="project-info">
+      <div class="project-meta"><span class="pill">Имитационное моделирование · 2026</span></div>
+      <h3>Борщевик Сосновского: можно ли его победить?</h3>
+      <p class="project-lead">Клеточный автомат на карте 150×150: лес, луга, река, дороги и деревни.
+        Борщевик растёт, цветёт и сбрасывает семена, а служба борьбы с ограниченным бюджетом пытается его остановить.</p>
+      <ul class="bullets">
+        <li><b>Своя модель</b>: банк семян в почве, перенос семян по реке и дорогам, конкуренция с местной растительностью.</li>
+        <li><b>6 методов борьбы</b> — покос, гербицид, чёрная плёнка, посев трав, козы — и стратегии под годовой бюджет.</li>
+        <li><b>Пакетные прогоны</b> по 40 лет: без борьбы борщевик занимает 20% суши к ~26 году, а если начать на 5-й год вместо 12-го — победа <b>в 7–11 раз дешевле</b>.</li>
+      </ul>
+      <div class="tags"><span>C#</span><span>.NET 8</span><span>WPF</span><span>клеточные автоматы</span><span>Python · графики</span></div>
+    </div>
+    <div class="project-visual stack">
+      <figure class="browser win">
+        <div class="browser-bar"><i></i><i></i><i></i><span>Борщевик Сосновского — клеточный автомат</span></div>
+        <img src="img/borsch-window.jpg" alt="Окно симуляции распространения борщевика" data-zoom>
+      </figure>
+      <figure class="photo-card strip"><img src="img/borsch-maps.jpg" alt="Карта по годам при комплексной борьбе" data-zoom><figcaption>Комплексная стратегия: 13, 15, 20 и 30 год</figcaption></figure>
+    </div>
+  </article>
+
+  <div class="grid-3">
+    <article class="card lab-card reveal">
+      <figure class="lab-img"><img src="img/ml-cars.jpg" alt="Сравнение оптимизаторов" data-zoom loading="lazy"></figure>
+      <div class="lab-kicker">Машинное обучение · лаба 1</div>
+      <h4>Классы автомобилей</h4>
+      <p>Полносвязная нейросеть на датасете Car Evaluation: подготовка признаков, обучение и сравнение оптимизаторов AdamW, Adam и Adagrad.</p>
+      <div class="tags sm"><span>PyTorch</span><span>pandas</span><span>FNN</span></div>
+    </article>
+    <article class="card lab-card reveal">
+      <figure class="lab-img"><img src="img/ml-birds-cmp.jpg" alt="Сравнение моделей bird/drone" data-zoom loading="lazy"></figure>
+      <div class="lab-kicker">Машинное обучение · лаба 2</div>
+      <h4>Птица или дрон</h4>
+      <p>Своя CNN против дообученных VGG16, ConvNeXt-Tiny и ShuffleNetV2. Лучший результат — <b>F1 0,993</b> у ShuffleNetV2.</p>
+      <div class="tags sm"><span>PyTorch</span><span>CNN</span><span>transfer learning</span></div>
+    </article>
+    <article class="card lab-card reveal">
+      <figure class="lab-img"><img src="img/ml-traffic.jpg" alt="Прогноз трафика RNN, LSTM, GRU" data-zoom loading="lazy"></figure>
+      <div class="lab-kicker">Машинное обучение · лаба 3</div>
+      <h4>Прогноз дорожного трафика</h4>
+      <p>Почасовой временной ряд с погодой и событиями: сравнение RNN, LSTM и GRU на прогнозе интенсивности движения.</p>
+      <div class="tags sm"><span>PyTorch</span><span>LSTM / GRU</span><span>time series</span></div>
+    </article>
+  </div>
+  <div class="labs-more reveal"><a class="link" href="https://github.com/Red1an/PythonScripts" target="_blank" rel="noopener">Все лабы на GitHub ↗</a></div>
+</section>
+
+<!-- ============ JOURNEY ============ -->
+<section class="wrap section" id="journey">
+  <div class="section-head reveal"><span class="section-num">05</span><h2>Хакатоны и акселераторы</h2></div>
+
+  <div class="timeline">
+    <div class="tl-item reveal top">
+      <div class="tl-date">окт 2026</div>
+      <div class="tl-card">
+        <div class="tl-head"><h4>Хакатон «Время IT» · ГУАП × Звук</h4><span class="pill accent">Финал</span></div>
+        <p>Неделя на продукт «Балдёжный звук» — общий плейлист с рейтингом и ML-рекомендациями. Вышли в финал и питчились.</p>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <div class="tl-date">окт 2026</div>
+      <div class="tl-card">
+        <div class="tl-head"><h4>Хакатон RLT.Hack · Росэлторг</h4></div>
+        <p>ML-модель подбора поставщиков для госзакупок Санкт-Петербурга.</p>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <div class="tl-date">2026</div>
+      <div class="tl-card">
+        <div class="tl-head"><h4>IT-форум «Стачка»</h4></div>
+        <p>Лекции по разработке и управлению командами и продуктом.</p>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <div class="tl-date">мар 2026</div>
+      <div class="tl-card">
+        <div class="tl-head"><h4>Акселератор HSE FEST 2026 · НИУ ВШЭ</h4><span class="pill new">Прошли отбор</span></div>
+        <p>Месяц акселерации, затем отбор на фестиваль — там представили Нордкрофт на стенде с демо приложения.</p>
+      </div>
+    </div>
+    <div class="tl-item reveal top">
+      <div class="tl-date">дек 2025</div>
+      <div class="tl-card">
+        <div class="tl-head"><h4>Акселератор ТехноПитер · ГУАП</h4><span class="pill accent">2 место</span></div>
+        <p>Три месяца акселерации, на финале показывали работающий продукт, а не макеты.</p>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <div class="tl-date">2025</div>
+      <div class="tl-card">
+        <div class="tl-head"><h4>Всероссийская программа «Цифра»</h4><span class="pill blue">Финал</span></div>
+        <p>Вышли в финал и защищали проект на Demo Day.</p>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <div class="tl-date">2025</div>
+      <div class="tl-card">
+        <div class="tl-head"><h4>Выставка проектов «Я в деле»</h4></div>
+        <p>Стенд Нордкрофта: демо на ноутбуке и планшете, бизнес-модель и цели до 2028 года.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="sub-title reveal">С мероприятий</h3>
+  <div class="gallery">
+    <figure class="g-item wide reveal"><img src="img/photo-technopiter.jpg" alt="Финал ТехноПитера" data-zoom loading="lazy"><figcaption>Финал ТехноПитера — 2 место</figcaption></figure>
+    <figure class="g-item tall reveal"><img src="img/photo-stachka.jpg" alt="Форум «Стачка»" data-zoom loading="lazy"><figcaption>«Стачка»</figcaption></figure>
+    <figure class="g-item reveal"><img src="img/vit-team.jpg" alt="Команда в финале «Времени IT»" data-zoom loading="lazy"><figcaption>Финал «Времени IT»</figcaption></figure>
+    <figure class="g-item reveal"><img src="img/photo-cifra.jpg" alt="Demo Day «Цифры»" data-zoom loading="lazy"><figcaption>Demo Day «Цифры»</figcaption></figure>
+    <figure class="g-item tall reveal"><img src="img/photo-stand.jpg" alt="Стенд на «Я в деле»" data-zoom loading="lazy"><figcaption>«Я в деле»</figcaption></figure>
+    <figure class="g-item wide reveal"><img src="img/photo-rlt.jpg" alt="Команда на RLT.Hack" data-zoom loading="lazy"><figcaption>RLT.Hack</figcaption></figure>
+    <figure class="g-item reveal"><img src="img/photo-hse.jpg" alt="Стенд на HSE FEST" data-zoom loading="lazy"><figcaption>Стенд на фестивале HSE FEST 2026</figcaption></figure>
+  </div>
+
+  <h3 class="sub-title reveal">Сертификаты</h3>
+  <div class="certs" id="certs">
+    <button class="cert reveal" data-src="img/vremyait.jpg"><img src="img/vremyait.jpg" alt="" loading="lazy"><span>Хакатон «Время IT» — финал<small>ГУАП × Звук · 2026</small></span></button>
+    <button class="cert reveal" data-src="img/rlthack.jpg"><img src="img/rlthack.jpg" alt="" loading="lazy"><span>RLT.Hack<small>Росэлторг · 2026</small></span></button>
+    <button class="cert reveal" data-src="img/technopiter.jpg"><img src="img/technopiter.jpg" alt="" loading="lazy"><span>ТехноПитер — финал<small>ГУАП · 2025</small></span></button>
+    <button class="cert reveal" data-src="img/hse.jpg"><img src="img/hse.jpg" alt="" loading="lazy"><span>HSE FEST<small>НИУ ВШЭ · 2026</small></span></button>
+    <button class="cert portrait reveal" data-src="img/cifra.jpg"><img src="img/cifra.jpg" alt="" loading="lazy"><span>«Цифра»<small>2025</small></span></button>
+    <button class="cert portrait reveal" data-src="img/protei.jpg"><img src="img/protei.jpg" alt="" loading="lazy"><span>Быстрый C++тарт<small>IT-школа ПРОТЕЙ · 2026</small></span></button>
+    <button class="cert portrait reveal" data-src="img/norbit.jpg"><img src="img/norbit.jpg" alt="" loading="lazy"><span>Вводный курс 1С<small>НОРБИТ · 2026</small></span></button>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="wrap section" id="skills">
+  <div class="section-head reveal"><span class="section-num">06</span><h2>Навыки</h2></div>
+  <div class="skills">
+    <div class="skill-group reveal"><h4>Языки</h4><div class="tags"><span class="hot">C#</span><span class="hot">Python</span><span>SQL</span><span>TypeScript</span><span>C++</span></div></div>
+    <div class="skill-group reveal"><h4>.NET</h4><div class="tags"><span class="hot">ASP.NET Core</span><span class="hot">EF Core</span><span>LINQ</span><span>async/await</span><span>gRPC</span><span>Clean Architecture</span><span>Unit Testing</span></div></div>
+    <div class="skill-group reveal"><h4>Python и ML</h4><div class="tags"><span class="hot">FastAPI</span><span>SQLAlchemy</span><span>pandas</span><span>NumPy</span><span>LightGBM</span><span>scikit-learn</span></div></div>
+    <div class="skill-group reveal"><h4>Данные и очереди</h4><div class="tags"><span class="hot">PostgreSQL</span><span>Redis</span><span>RabbitMQ</span><span>S3 / MinIO</span><span>pgvector</span><span>MS SQL</span></div></div>
+    <div class="skill-group reveal"><h4>Инфраструктура</h4><div class="tags"><span class="hot">Docker</span><span>Docker Compose</span><span>Nginx</span><span>Linux</span><span>GitHub Actions</span><span>SSL/TLS</span></div></div>
+    <div class="skill-group reveal"><h4>API и интеграции</h4><div class="tags"><span>REST</span><span>JWT / OAuth</span><span>Swagger</span><span>WebSocket</span><span>YooKassa</span><span>amoCRM</span></div></div>
+    <div class="skill-group reveal"><h4>Процессы</h4><div class="tags"><span>Git, PR, code review</span><span>Kanban</span><span>Postman</span></div></div>
+    <div class="skill-group reveal"><h4>AI в работе</h4><div class="tags"><span class="hot">Claude Code</span><span>LLM в продуктах</span><span>GigaChat API</span></div></div>
+  </div>
+
+  <div class="edu reveal">
+    <h3 class="sub-title">Образование и курсы</h3>
+    <ul class="edu-list">
+      <li><b>ГУАП</b> — Институт информационных технологий и программирования, «Прикладная информатика» <span>2027</span></li>
+      <li><b>IT-школа ПРОТЕЙ</b> — «Быстрый C++тарт» <span>2026</span></li>
+      <li><b>НОРБИТ</b> — «Вводный курс по 1С» <span>2026</span></li>
+      <li><b>Udemy</b> — Complete C# Masterclass <span>2023</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ LIFE ============ -->
+<section class="wrap section" id="life">
+  <div class="section-head reveal"><span class="section-num">07</span><h2>Вне кода</h2></div>
+  <p class="section-lead reveal">Что ещё про меня стоит знать.</p>
+  <div class="life-grid">
+    <article class="life-card photo reveal" style="--img:url(img/hike.jpg)">
+      <div class="life-emoji">🥾</div>
+      <h4>Походы</h4>
+      <p>Лес, рюкзак, тропа — лучший способ перезагрузиться.</p>
+    </article>
+    <article class="life-card big reveal">
+      <div class="life-emoji">🔍</div>
+      <h4>Разбираться, как всё устроено</h4>
+      <p>Люблю докопаться до того, как что-то работает внутри, и найти лучшее решение в рамках ограничений:
+        самое удачное железо за свой бюджет, самую простую архитектуру под задачу, самый дешёвый способ победить борщевик.</p>
+    </article>
+    <article class="life-card reveal">
+      <div class="life-emoji">🎸</div>
+      <h4>Гитара</h4>
+      <p>Играю на гитаре — и написал себе тренажёр для неё в LifeHub.</p>
+    </article>
+    <article class="life-card reveal">
+      <div class="life-emoji">✈️</div>
+      <h4>Авиамодельный спорт</h4>
+      <p>Раньше занимался авиамоделированием — оттуда привычка собирать, тестировать и доводить до ума руками.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="wrap section contact" id="contact">
+  <div class="contact-box reveal">
+    <h2>Давайте<br>поработаем вместе</h2>
+    <p>Ищу команду, где можно расти в backend-разработке. Быстрее всего отвечаю в Telegram.</p>
+    <div class="contact-links">
+      <a class="contact-item" href="https://t.me/Red1ann" target="_blank" rel="noopener"><span class="ck">Telegram</span><span class="cv">@Red1ann</span></a>
+      <button class="contact-item" id="copyMail" data-mail="pron.max1m@yandex.ru"><span class="ck">Почта · нажми, чтобы скопировать</span><span class="cv">pron.max1m@yandex.ru</span></button>
+      <a class="contact-item" href="https://github.com/Red1an" target="_blank" rel="noopener"><span class="ck">GitHub</span><span class="cv">github.com/Red1an</span></a>
+    </div>
+    <a class="btn primary big" href="Pron_Maksim_CV.pdf" download>Скачать резюме PDF</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap footer">
+  <span>© 2026 Максим Пронь</span>
+  <span class="mono">сделано вручную · без фреймворков</span>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb-close" aria-label="Закрыть">×</button>
+  <button class="lb-nav prev" aria-label="Предыдущее">‹</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="lb-nav next" aria-label="Следующее">›</button>
+</div>
+<div class="toast" id="toast">Почта скопирована</div>
+
+<script src="script.js"></script>
+</body>
+</html>
