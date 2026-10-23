@@ -99,6 +99,7 @@ b { font-weight: 600; }
 .i-moon { display: none; }
 :root[data-theme="light"] .i-sun { display: none; }
 :root[data-theme="light"] .i-moon { display: block; }
+.lang { font: 700 13px var(--f-mono); letter-spacing: .02em; }
 .burger { display: none; flex-direction: column; align-items: center; justify-content: center; gap: 5px; }
 .burger span { width: 16px; height: 2px; background: currentColor; border-radius: 2px; transition: transform .3s; }
 .burger.open span:first-child { transform: translateY(3.5px) rotate(45deg); }

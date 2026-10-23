@@ -60,7 +60,8 @@ const io = new IntersectionObserver(entries => {
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
 // ---------- typed role ----------
-const roles = ['Backend-разработчик', 'C# / .NET', 'Python · FastAPI · ML', 'Docker · CI/CD · Linux', 'хакатонщик'];
+// Typed lines come from the page so each language version keeps its own wording.
+const roles = JSON.parse(document.getElementById('typed').dataset.roles);
 const typed = document.getElementById('typed');
 let ri = 0, ci = roles[0].length, deleting = true;
 const tick = () => {
@@ -149,7 +150,7 @@ document.querySelectorAll('.tl-card[data-photos]').forEach(card => {
   card.append(thumbs);
   card.tabIndex = 0;
   card.setAttribute('role', 'button');
-  card.setAttribute('aria-label', `${card.dataset.title}: фото`);
+  card.setAttribute('aria-label', `${card.dataset.title}: ${document.documentElement.lang === 'en' ? 'photos' : 'фото'}`);
   card.addEventListener('click', () => openLb(items, 0));
   card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLb(items, 0); } });
 });
