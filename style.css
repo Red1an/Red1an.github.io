@@ -322,6 +322,15 @@ b { font-weight: 600; }
 .lab-card p { color: var(--muted); font-size: 15px; flex: 1; }
 .lab-card p b { color: var(--text); }
 .labs-more { margin-top: 22px; text-align: right; }
+.lab-groups { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.lab-group { display: flex; flex-direction: column; gap: 16px; }
+.lab-group-head { display: flex; align-items: center; gap: 14px; }
+.lab-group-head h4 { font: 700 20px var(--f-head); letter-spacing: -.02em; }
+.lab-list { list-style: none; display: grid; gap: 12px; flex: 1; }
+.lab-list li { position: relative; padding-left: 18px; color: var(--muted); font-size: 15px; line-height: 1.5; }
+.lab-list li b { color: var(--text); }
+.lab-list li::before { content: ""; position: absolute; left: 0; top: .6em; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+@media (max-width: 1020px) { .lab-groups { grid-template-columns: 1fr; } }
 
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .proj-card { display: flex; flex-direction: column; gap: 14px; transition: transform .3s, border-color .3s; }

@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
@@ -254,32 +254,45 @@
     </div>
   </article>
 
-  <div class="grid-3">
-    <article class="card proj-card reveal">
-      <div class="proj-ico">DB</div>
-      <div class="lab-kicker">Базы данных · курсовая</div>
-      <h4>Система рекламного агентства</h4>
-      <p>Десктоп-приложение на PostgreSQL: организации, агенты, рекламные слоты, программы и договоры.
-        <b>Четыре роли</b> — администратор, директор, агент, клиент — с разными правами на чтение и изменение,
-        графики по договорам прямо в интерфейсе.</p>
-      <div class="tags sm"><span>Python</span><span>PostgreSQL</span><span>PyQt6</span><span>matplotlib</span></div>
+  <div class="lab-groups">
+    <article class="card lab-group reveal">
+      <div class="lab-group-head"><div class="proj-ico">DB</div><h4>Бэкенд и базы данных</h4></div>
+      <ul class="lab-list">
+        <li><b>Курсовая: система рекламного агентства</b> — десктоп-приложение на PostgreSQL + PyQt6, четыре роли с разными правами, графики по договорам</li>
+        <li><b>Индексы PostgreSQL</b> — B-tree, Hash, GIN, BRIN, частичные и по выражению — сравнение через EXPLAIN ANALYZE</li>
+        <li><b>Оконные функции</b> — аналитика студии звукозаписи: ранги продаж внутри жанра, доли от целого, LAG по соседним записям</li>
+        <li><b>ORM на SQLAlchemy</b> — схема БД, наполнение и запросы через модели</li>
+        <li><b>Графовая БД Neo4j</b> — модель данных и запросы на Cypher</li>
+        <li><b>ETL на Apache Airflow</b> — DAG-и забирают данные из Hacker News и OpenWeather, складывают в PostgreSQL и Parquet, всё в Docker Compose</li>
+      </ul>
+      <div class="tags sm"><span>PostgreSQL</span><span>SQLAlchemy</span><span>Neo4j</span><span>Airflow</span><span>Docker</span></div>
     </article>
-    <article class="card proj-card reveal">
-      <div class="proj-ico">⚡</div>
-      <div class="lab-kicker">Базы данных · лаба</div>
-      <h4>Индексы в PostgreSQL</h4>
-      <p>Сравнил <b>B-tree, Hash, GIN, BRIN</b>, индексы по выражению и частичные индексы через EXPLAIN ANALYZE:
-        когда планировщик берёт индекс, а когда всё равно идёт в Seq Scan, сколько места занимает каждый
-        и какой выбирать под тип запросов.</p>
-      <div class="tags sm"><span>PostgreSQL</span><span>EXPLAIN ANALYZE</span><span>JSONB</span></div>
+    <article class="card lab-group reveal">
+      <div class="lab-group-head"><div class="proj-ico">ML</div><h4>Машинное обучение</h4></div>
+      <ul class="lab-list">
+        <li><b>Классы автомобилей</b> — полносвязная сеть на Car Evaluation, сравнение оптимизаторов AdamW, Adam и Adagrad</li>
+        <li><b>Птица или дрон</b> — своя CNN против дообученных VGG16, ConvNeXt-Tiny и ShuffleNetV2 — лучший F1 0,993</li>
+        <li><b>Прогноз трафика</b> — временной ряд с погодой и событиями, сравнение RNN, LSTM и GRU</li>
+      </ul>
+      <div class="tags sm"><span>PyTorch</span><span>pandas</span><span>CNN</span><span>LSTM / GRU</span></div>
     </article>
-    <article class="card proj-card reveal">
-      <div class="proj-ico">⇶</div>
-      <div class="lab-kicker">Программная инженерия · лаба</div>
-      <h4>ETL-пайплайны на Airflow</h4>
-      <p>DAG-и, которые по расписанию забирают данные из Hacker News API и OpenWeather, чистят их в pandas
-        и складывают в PostgreSQL и Parquet. Всё поднимается в <b>Docker Compose</b>.</p>
-      <div class="tags sm"><span>Apache Airflow</span><span>pandas</span><span>PostgreSQL</span><span>Docker</span></div>
+    <article class="card lab-group reveal">
+      <div class="lab-group-head"><div class="proj-ico">{ }</div><h4>Алгоритмы и графы</h4></div>
+      <ul class="lab-list">
+        <li><b>Алгоритм Нуссинова</b> — динамическое программирование: максимум непересекающихся пар в цепочке</li>
+        <li><b>Раскраска графов</b> — раскраска рёбер через максимальные паросочетания и проверка по теореме Визинга, раскраска вершин</li>
+        <li><b>Растущие случайные деревья</b> — модель роста с предпочтением «старых» вершин и анализ спектра графа</li>
+      </ul>
+      <div class="tags sm"><span>Python</span><span>NetworkX</span><span>NumPy</span></div>
+    </article>
+    <article class="card lab-group reveal">
+      <div class="lab-group-head"><div class="proj-ico">∿</div><h4>Моделирование и статистика</h4></div>
+      <ul class="lab-list">
+        <li><b>Борщевик Сосновского</b> — клеточный автомат с бюджетом на борьбу — подробно выше</li>
+        <li><b>Генерация случайных величин</b> — метод обратной функции, проверка на выборках 1 000–10 000</li>
+        <li><b>Анализ выборок</b> — гистограммы, эмпирические функции распределения, сравнение с теоретическими</li>
+      </ul>
+      <div class="tags sm"><span>C#</span><span>Python</span><span>NumPy</span><span>matplotlib</span></div>
     </article>
   </div>
   <div class="labs-more reveal"><a class="link" href="https://github.com/Red1an/PythonScripts" target="_blank" rel="noopener">Все лабы на GitHub ↗</a></div>
@@ -453,6 +466,6 @@
 </div>
 <div class="toast" id="toast">Почта скопирована</div>
 
-<script src="script.js"></script>
+<script src="script.js?v=2"></script>
 </body>
 </html>
