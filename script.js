@@ -34,6 +34,7 @@ const spy = new IntersectionObserver(entries => {
 document.querySelectorAll('main section[id]').forEach(s => spy.observe(s));
 
 // ---------- reveal + counters ----------
+const numFmt = dec => new Intl.NumberFormat(document.documentElement.lang, { minimumFractionDigits: dec, maximumFractionDigits: dec });
 const countUp = el => {
   const target = parseFloat(el.dataset.count);
   const dec = +(el.dataset.dec || 0);
@@ -41,7 +42,7 @@ const countUp = el => {
   const step = t => {
     const p = Math.min((t - t0) / 1400, 1);
     const v = target * (1 - Math.pow(1 - p, 3));
-    el.textContent = v.toFixed(dec).replace('.', ',');
+    el.textContent = numFmt(dec).format(v);
     if (p < 1) requestAnimationFrame(step);
   };
   requestAnimationFrame(step);

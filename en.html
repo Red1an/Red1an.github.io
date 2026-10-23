@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
 
@@ -164,6 +164,36 @@
     <div class="project-visual devices">
       <div class="laptop"><div class="laptop-screen"><img src="img/nk-landing.jpg" alt="Nordkroft landing page" data-zoom></div><div class="laptop-base"></div></div>
       <div class="phone"><img src="img/nk-app-mobile.jpg" alt="Map of spots in the Nordkroft app" data-zoom></div>
+    </div>
+  </article>
+
+  <!-- Nordkroft in numbers -->
+  <article class="nk-numbers reveal">
+    <div class="nk-head">
+      <h3>Nordkroft in numbers</h3>
+      <div class="nk-links">
+        <a class="link" href="https://www.rustore.ru/catalog/app/ru.nordkroft.app" target="_blank" rel="noopener">RuStore ↗</a>
+        <a class="link" href="https://nordkroft.ru" target="_blank" rel="noopener">nordkroft.ru ↗</a>
+      </div>
+    </div>
+    <div class="nk-big">
+      <div><div class="nk-num"><span data-count="4300">0</span>+</div><div class="nk-label">people have used the service since May 2026</div></div>
+      <div><div class="nk-num"><span data-count="1000">0</span>+</div><div class="nk-label">spot searches from natural-language queries</div></div>
+      <div><div class="nk-num">RuStore</div><div class="nk-label">Android app in the store plus a web version</div></div>
+      <div><div class="nk-num accent">Paid</div><div class="nk-label">first paying users of premium features via YooKassa</div></div>
+    </div>
+    <div class="nk-eng">
+      <div><b><span data-count="13">0</span></b> services in production</div>
+      <div><b><span data-count="280">0</span>+</b> API endpoints</div>
+      <div><b><span data-count="470">0</span>+</b> pull requests</div>
+      <div><b><span data-count="70">0</span>+</b> database migrations</div>
+    </div>
+    <div class="nk-platforms"><span>Web app</span><span>Android · RuStore</span><span>Telegram Mini App</span><span>Telegram bot</span><span>Admin panel with analytics</span><span>Landing page</span></div>
+    <div class="nk-built">
+      <div class="nk-card"><div class="nk-ico">₽</div><h4>Payments and premium</h4><p>YooKassa, access granted after payment, an in-app currency ("nordiks") and premium search.</p></div>
+      <div class="nk-card"><div class="nk-ico">📈</div><h4>Analytics for the team</h4><p>An admin panel with a funnel, traffic sources, an activity heatmap and search ranking insights.</p></div>
+      <div class="nk-card"><div class="nk-ico">🤖</div><h4>Telegram data + ML</h4><p>Parsing fishing channels, an ML service normalizes reports into one format, deduplication.</p></div>
+      <div class="nk-card"><div class="nk-ico">🚀</div><h4>Painless deploys</h4><p>CI on GitHub Actions ships only the services that changed, automatic database backups, SSL.</p></div>
     </div>
   </article>
 
@@ -455,6 +485,6 @@
 </div>
 <div class="toast" id="toast">Email copied</div>
 
-<script src="script.js?v=4"></script>
+<script src="script.js?v=5"></script>
 </body>
 </html>
