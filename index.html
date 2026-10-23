@@ -255,26 +255,31 @@
   </article>
 
   <div class="grid-3">
-    <article class="card lab-card reveal">
-      <figure class="lab-img"><img src="img/ml-cars.jpg" alt="Сравнение оптимизаторов" data-zoom loading="lazy"></figure>
-      <div class="lab-kicker">Машинное обучение · лаба 1</div>
-      <h4>Классы автомобилей</h4>
-      <p>Полносвязная нейросеть на датасете Car Evaluation: подготовка признаков, обучение и сравнение оптимизаторов AdamW, Adam и Adagrad.</p>
-      <div class="tags sm"><span>PyTorch</span><span>pandas</span><span>FNN</span></div>
+    <article class="card proj-card reveal">
+      <div class="proj-ico">DB</div>
+      <div class="lab-kicker">Базы данных · курсовая</div>
+      <h4>Система рекламного агентства</h4>
+      <p>Десктоп-приложение на PostgreSQL: организации, агенты, рекламные слоты, программы и договоры.
+        <b>Четыре роли</b> — администратор, директор, агент, клиент — с разными правами на чтение и изменение,
+        графики по договорам прямо в интерфейсе.</p>
+      <div class="tags sm"><span>Python</span><span>PostgreSQL</span><span>PyQt6</span><span>matplotlib</span></div>
     </article>
-    <article class="card lab-card reveal">
-      <figure class="lab-img"><img src="img/ml-birds-cmp.jpg" alt="Сравнение моделей bird/drone" data-zoom loading="lazy"></figure>
-      <div class="lab-kicker">Машинное обучение · лаба 2</div>
-      <h4>Птица или дрон</h4>
-      <p>Своя CNN против дообученных VGG16, ConvNeXt-Tiny и ShuffleNetV2. Лучший результат — <b>F1 0,993</b> у ShuffleNetV2.</p>
-      <div class="tags sm"><span>PyTorch</span><span>CNN</span><span>transfer learning</span></div>
+    <article class="card proj-card reveal">
+      <div class="proj-ico">⚡</div>
+      <div class="lab-kicker">Базы данных · лаба</div>
+      <h4>Индексы в PostgreSQL</h4>
+      <p>Сравнил <b>B-tree, Hash, GIN, BRIN</b>, индексы по выражению и частичные индексы через EXPLAIN ANALYZE:
+        когда планировщик берёт индекс, а когда всё равно идёт в Seq Scan, сколько места занимает каждый
+        и какой выбирать под тип запросов.</p>
+      <div class="tags sm"><span>PostgreSQL</span><span>EXPLAIN ANALYZE</span><span>JSONB</span></div>
     </article>
-    <article class="card lab-card reveal">
-      <figure class="lab-img"><img src="img/ml-traffic.jpg" alt="Прогноз трафика RNN, LSTM, GRU" data-zoom loading="lazy"></figure>
-      <div class="lab-kicker">Машинное обучение · лаба 3</div>
-      <h4>Прогноз дорожного трафика</h4>
-      <p>Почасовой временной ряд с погодой и событиями: сравнение RNN, LSTM и GRU на прогнозе интенсивности движения.</p>
-      <div class="tags sm"><span>PyTorch</span><span>LSTM / GRU</span><span>time series</span></div>
+    <article class="card proj-card reveal">
+      <div class="proj-ico">⇶</div>
+      <div class="lab-kicker">Программная инженерия · лаба</div>
+      <h4>ETL-пайплайны на Airflow</h4>
+      <p>DAG-и, которые по расписанию забирают данные из Hacker News API и OpenWeather, чистят их в pandas
+        и складывают в PostgreSQL и Parquet. Всё поднимается в <b>Docker Compose</b>.</p>
+      <div class="tags sm"><span>Apache Airflow</span><span>pandas</span><span>PostgreSQL</span><span>Docker</span></div>
     </article>
   </div>
   <div class="labs-more reveal"><a class="link" href="https://github.com/Red1an/PythonScripts" target="_blank" rel="noopener">Все лабы на GitHub ↗</a></div>
@@ -424,7 +429,7 @@
 <!-- ============ CONTACT ============ -->
 <section class="wrap section contact" id="contact">
   <div class="contact-box reveal">
-    <h2>Давайте<br>поработаем вместе</h2>
+    <h2>Связаться<br>со мной</h2>
     <p>Ищу команду, где можно расти в backend-разработке. Быстрее всего отвечаю в Telegram.</p>
     <div class="contact-links">
       <a class="contact-item" href="https://t.me/Red1ann" target="_blank" rel="noopener"><span class="ck">Telegram</span><span class="cv">@Red1ann</span></a>
@@ -438,7 +443,6 @@
 
 <footer class="wrap footer">
   <span>© 2026 Максим Пронь</span>
-  <span class="mono">сделано вручную · без фреймворков</span>
 </footer>
 
 <div class="lightbox" id="lightbox" aria-hidden="true">
