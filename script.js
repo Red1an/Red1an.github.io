@@ -132,3 +132,24 @@ document.getElementById('copyMail').addEventListener('click', async e => {
   toast.classList.add('show');
   setTimeout(() => toast.classList.remove('show'), 1800);
 });
+
+// ---------- timeline: event photos and certificates ----------
+document.querySelectorAll('.tl-card[data-photos]').forEach(card => {
+  const items = card.dataset.photos.split(';').map(p => {
+    const [src, cap] = p.split('|');
+    return { src, cap: `${card.dataset.title}<small>${cap}</small>` };
+  });
+  const thumbs = document.createElement('div');
+  thumbs.className = 'tl-thumbs';
+  items.slice(0, 3).forEach(({ src }) => {
+    const img = document.createElement('img');
+    img.src = src; img.alt = ''; img.loading = 'lazy';
+    thumbs.append(img);
+  });
+  card.append(thumbs);
+  card.tabIndex = 0;
+  card.setAttribute('role', 'button');
+  card.setAttribute('aria-label', `${card.dataset.title}: фото`);
+  card.addEventListener('click', () => openLb(items, 0));
+  card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLb(items, 0); } });
+});
