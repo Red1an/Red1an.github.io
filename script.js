@@ -176,3 +176,30 @@ const updateProgress = () => {
 addEventListener('scroll', updateProgress, { passive: true });
 addEventListener('resize', updateProgress);
 updateProgress();
+
+// ---------- scroll-linked: timeline line and project parallax ----------
+const timeline = document.getElementById('timeline');
+const tlItems = timeline ? [...timeline.querySelectorAll('.tl-item')] : [];
+const visuals = [...document.querySelectorAll('.project .project-visual, .proj-wide .lab-img')];
+const calm = matchMedia('(prefers-reduced-motion: reduce)');
+let ticking = false;
+const onScroll = () => {
+  ticking = false;
+  const mark = innerHeight * 0.6;
+  if (timeline) {
+    const r = timeline.getBoundingClientRect();
+    const p = Math.min(Math.max((mark - r.top) / r.height, 0), 1);
+    timeline.style.setProperty('--tl', p.toFixed(3));
+    tlItems.forEach(item => item.classList.toggle('lit', item.getBoundingClientRect().top + 30 < mark));
+  }
+  if (!calm.matches && innerWidth > 1020) {
+    visuals.forEach(v => {
+      const r = v.getBoundingClientRect();
+      const offset = (r.top + r.height / 2 - innerHeight / 2) * -0.06;
+      v.style.transform = `translateY(${offset.toFixed(1)}px)`;
+    });
+  }
+};
+addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+addEventListener('resize', onScroll);
+onScroll();
