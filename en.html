@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=19">
+<link rel="stylesheet" href="style.css?v=20">
 </head>
 <body>
 
@@ -263,32 +263,17 @@
     </div>
   </article>
 
-  <!-- small projects -->
-  <div class="grid-3">
-    <article class="card proj-card reveal">
-      <div class="proj-ico">⇄</div>
-      <h4>ReportBroker</h4>
-      <p>A conversion reporting service built on <b>Clean Architecture</b>: requests come in over RabbitMQ, results go out
-        over gRPC, identical reports are deduplicated, statuses are cached in Redis, covered by unit tests.</p>
-      <div class="tags sm"><span>C#</span><span>RabbitMQ</span><span>gRPC</span><span>Redis</span></div>
-      <a class="link" href="https://github.com/Red1an/ReportBroker" target="_blank" rel="noopener">GitHub ↗</a>
-    </article>
-    <article class="card proj-card reveal">
-      <figure class="lab-img"><img src="img/lifehub.jpg" alt="LifeHub home screen" data-zoom loading="lazy"></figure>
+  <!-- LifeHub -->
+  <article class="card proj-card proj-wide reveal">
+    <figure class="lab-img"><img src="img/lifehub.jpg" alt="LifeHub home screen" data-zoom loading="lazy"></figure>
+    <div class="proj-wide-body">
       <h4>LifeHub</h4>
       <p>A personal hub of mini-apps: finances, notes, habits, a planner, the "Jarvis" voice assistant and a
         <b>guitar trainer</b>. Works on desktop and phone; new modules are written by an AI against the hub's SDK.</p>
       <div class="tags sm"><span>TypeScript</span><span>Node.js</span><span>React</span><span>SQLite</span></div>
       <a class="link" href="https://github.com/Red1an/LifeHub" target="_blank" rel="noopener">GitHub ↗</a>
-    </article>
-    <article class="card proj-card reveal">
-      <div class="proj-ico">{ }</div>
-      <h4>C++ client–server</h4>
-      <p>Final project of the PROTEI IT school: a multithreaded socket server computes distances to clients,
-        plus an interactive client configured via JSON or CLI, with tests.</p>
-      <div class="tags sm"><span>C++</span><span>CMake</span><span>Sockets</span><span>Threads</span></div>
-    </article>
-  </div>
+    </div>
+  </article>
 </section>
 
 <!-- ============ LABS ============ -->

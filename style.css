@@ -577,3 +577,10 @@ b { font-weight: 600; }
 .exp-sm .exp-list li { font-size: 15.5px; }
 .exp-sm .bullets { margin-bottom: 16px; }
 @media (max-width: 640px) { .exp-sm { padding: 22px; } }
+
+/* ---------- wide project card ---------- */
+.proj-wide { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 32px; align-items: center; padding: 24px; }
+.proj-wide .lab-img { margin: 0; aspect-ratio: 16/10; }
+.proj-wide-body { display: flex; flex-direction: column; gap: 14px; }
+.proj-wide-body h4 { font-size: 24px; }
+@media (max-width: 1020px) { .proj-wide { grid-template-columns: 1fr; gap: 18px; } }
