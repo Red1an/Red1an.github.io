@@ -105,7 +105,8 @@ b { font-weight: 600; }
 .caret { animation: blink 1s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 .scroll-hint { display: none; }
-.hero-name { font: 600 clamp(48px, 7.4vw, 92px)/1 var(--f-head); letter-spacing: -.03em; margin-bottom: 28px; }
+.hero-name { font: 800 clamp(52px, 8.6vw, 112px)/.95 "Unbounded", var(--f-body); letter-spacing: -.045em; margin-bottom: 28px; }
+.outline { color: transparent; -webkit-text-stroke: 2px var(--text); }
 .hero-lead { max-width: 560px; font-size: 18.5px; color: var(--muted); }
 .hero-lead b { color: var(--text); font-weight: 500; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
@@ -352,7 +353,7 @@ b { font-weight: 600; }
   .wrap { width: calc(100% - 32px); }
   .nav { padding-inline: 16px; }
   .section { padding-top: 76px; }
-  .hero-name { font-size: 46px; }
+  .hero-name { font-size: 50px; }
   .hero-photo { width: 210px; margin-left: 40px; }
   .c1 { left: -28px; } .c2 { left: -34px; } .c3 { right: -36px; }
   .float-chip { font-size: 12px; padding: 6px 10px; }
