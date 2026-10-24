@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=15">
+<link rel="stylesheet" href="style.css?v=16">
 </head>
 <body>
 
@@ -128,15 +128,14 @@
     </div>
     <div class="exp-body">
       <div class="exp-title">Nordkroft <span>· C#/.NET Backend Developer</span></div>
-      <div class="exp-sub">B2C product startup, team of 4 · <a href="https://app.nordkroft.ru" target="_blank" rel="noopener">app.nordkroft.ru ↗</a></div>
-      <p class="exp-lead">I wrote and run almost the entire backend — <b>two ASP.NET Core services</b>: map and spots, catch reports, routes, guides, profiles, payments and the admin panel. Plus all the infrastructure it runs on.</p>
-      <div class="exp-kpis"><div><b>5,000+</b><span>users</span></div><div><b>~47k</b><span>lines of C#</span></div><div><b>280+</b><span>API endpoints</span></div><div><b>13</b><span>containers in production</span></div></div>
-      <div class="exp-cards">
-        <div class="exp-card"><div class="exp-ico">🔎</div><h4>Semantic search</h4><p>An angler types a request in plain words and gets matching spots. My part: a vector index of spots in Redis (HNSW, cosine similarity) and wiring the backend to the team's ML service.</p></div>
-        <div class="exp-card"><div class="exp-ico">🔐</div><h4>Sign-in and payments</h4><p>JWT with refresh tokens, Yandex sign-in, email codes and guest access. YooKassa with webhooks and server-side re-verification, in-app purchases and subscriptions.</p></div>
-        <div class="exp-card"><div class="exp-ico">📡</div><h4>Data and admin</h4><p>Real-time parsing of fishing Telegram channels, report deduplication, growth and behavior analytics, moderation, scheduled backups.</p></div>
-        <div class="exp-card"><div class="exp-ico">🚀</div><h4>Production on a VPS</h4><p>Docker Compose, Nginx and Certbot, CI/CD on GitHub Actions that ships only the services that changed. When production goes down, I find the cause in the logs and bring it back fast.</p></div>
-      </div>
+      <div class="exp-sub">B2C startup, <b>5,000+ users</b> · team of 4 · <a href="https://app.nordkroft.ru" target="_blank" rel="noopener">app.nordkroft.ru ↗</a></div>
+      <ul class="bullets exp-list">
+        <li><b>Wrote almost the entire backend</b>: two ASP.NET Core services, ~47k lines of C#, 280+ endpoints, 50+ entities in PostgreSQL.</li>
+        <li><b>Built semantic spot search</b>: a vector index in Redis (HNSW) wired to the team's ML service — anglers type a request in plain words and get matching spots.</li>
+        <li><b>Integrated YooKassa payments</b> with webhooks and server-side re-verification — the first in-app purchases came in.</li>
+        <li><b>Built the data service</b>: real-time parsing of fishing Telegram channels, report deduplication, an admin panel with growth and behavior analytics.</li>
+        <li><b>Run production on a VPS</b>: 13 containers in Docker Compose, Nginx, CI/CD on GitHub Actions, scheduled database backups. When something breaks, I find the cause in the logs and bring it back fast.</li>
+      </ul>
       <div class="tags">
         <span>C#</span><span>.NET 9</span><span>ASP.NET Core</span><span>EF Core</span><span>PostgreSQL</span><span>Redis</span><span>MinIO / S3</span><span>YooKassa</span><span>Docker</span><span>Nginx</span><span>GitHub Actions</span>
       </div>
