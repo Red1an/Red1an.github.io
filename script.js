@@ -155,3 +155,14 @@ document.querySelectorAll('.tl-card[data-photos]').forEach(card => {
   card.addEventListener('click', () => openLb(items, 0));
   card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLb(items, 0); } });
 });
+
+// ---------- screen recordings: play only while visible ----------
+const videoIo = new IntersectionObserver(entries => {
+  entries.forEach(({ target, isIntersecting }) => {
+    if (isIntersecting) target.play().catch(() => {});
+    else target.pause();
+  });
+}, { threshold: .25 });
+if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('video[data-inview]').forEach(v => videoIo.observe(v));
+}

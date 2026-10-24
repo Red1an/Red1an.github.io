@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=13">
+<link rel="stylesheet" href="style.css?v=15">
 </head>
 <body>
 
@@ -127,18 +127,15 @@
     </div>
     <div class="exp-body">
       <div class="exp-title">Нордкрофт <span>· C#/.NET Backend Developer</span></div>
-      <div class="exp-sub">Продуктовый B2C-стартап, команда из 4 человек, 5 000+ пользователей · <a href="https://app.nordkroft.ru" target="_blank" rel="noopener">app.nordkroft.ru ↗</a></div>
-      <p class="exp-lead">Написал и веду почти весь бэкенд: <b>два сервиса на ASP.NET Core</b> — ~47 тыс. строк C#,
-        280+ эндпоинтов, 50+ сущностей в PostgreSQL — и инфраструктуру, на которой они работают.</p>
-      <ul class="bullets">
-        <li><b>Основной API</b>: карта и места, отчёты с водоёмов и лента, маршруты, гиды, слипы, профили. EF Core и 70+ миграций.</li>
-        <li><b>Семантический поиск мест</b>: эмбеддинги мест в Redis с векторным индексом (HNSW, косинусная близость) и ML-сервис для запросов на естественном языке.</li>
-        <li><b>Авторизация</b>: JWT с refresh-токенами, вход через Яндекс и Google, Telegram Mini App с проверкой подписи initData, email-коды, гостевой доступ.</li>
-        <li><b>Платежи</b>: YooKassa с вебхуками и повторной проверкой платежа через API, внутренние покупки и подписки с фоновой проверкой сроков.</li>
-        <li><b>Сервис данных и админки</b>: парсинг рыболовных Telegram-каналов в реальном времени, очередь сравнения и дедупликация отчётов, аналитика роста и поведения, модерация, бэкапы базы по расписанию.</li>
-        <li><b>Фото</b>: MinIO/S3, подписанные ссылки с истечением, несколько размеров под превью, карточку и детальный экран.</li>
-        <li><b>Инфраструктура на VPS</b>: Docker Compose из 13 контейнеров, Nginx и Certbot, CI/CD на GitHub Actions, который выкатывает только изменённые сервисы. Если прод падает — быстро нахожу причину по логам и поднимаю.</li>
-      </ul>
+      <div class="exp-sub">Продуктовый B2C-стартап, команда из 4 человек · <a href="https://app.nordkroft.ru" target="_blank" rel="noopener">app.nordkroft.ru ↗</a></div>
+      <p class="exp-lead">Написал и веду почти весь бэкенд продукта — <b>два сервиса на ASP.NET Core</b>: карта и места, отчёты с водоёмов, маршруты, гиды, профили, платежи и админка. Плюс вся инфраструктура, на которой это работает.</p>
+      <div class="exp-kpis"><div><b>5 000+</b><span>пользователей</span></div><div><b>~47 тыс.</b><span>строк C#</span></div><div><b>280+</b><span>эндпоинтов API</span></div><div><b>13</b><span>контейнеров в проде</span></div></div>
+      <div class="exp-cards">
+        <div class="exp-card"><div class="exp-ico">🔎</div><h4>Семантический поиск</h4><p>Рыбак пишет запрос обычными словами — и получает подходящие места. Моя часть — векторный индекс мест в Redis (HNSW, косинусная близость) и связка бэкенда с ML-сервисом команды.</p></div>
+        <div class="exp-card"><div class="exp-ico">🔐</div><h4>Вход и платежи</h4><p>JWT и refresh-токены, вход через Яндекс, email-коды и гостевой доступ. YooKassa с вебхуками и повторной проверкой платежа, внутренние покупки и подписки.</p></div>
+        <div class="exp-card"><div class="exp-ico">📡</div><h4>Данные и админка</h4><p>Парсинг рыболовных Telegram-каналов в реальном времени, дедупликация отчётов, аналитика роста и поведения пользователей, модерация, бэкапы по расписанию.</p></div>
+        <div class="exp-card"><div class="exp-ico">🚀</div><h4>Прод на VPS</h4><p>Docker Compose, Nginx и Certbot, CI/CD на GitHub Actions выкатывает только изменённые сервисы. Если прод падает — быстро нахожу причину по логам и поднимаю.</p></div>
+      </div>
       <div class="tags">
         <span>C#</span><span>.NET 9</span><span>ASP.NET Core</span><span>EF Core</span><span>PostgreSQL</span><span>Redis</span><span>MinIO / S3</span><span>YooKassa</span><span>Docker</span><span>Nginx</span><span>GitHub Actions</span>
       </div>
@@ -188,9 +185,9 @@
     </div>
     <div class="project-visual stack">
       <div class="phones-row">
-        <div class="phone sm"><img src="img/bz-meloman-card.jpg" alt="Голосование за трек" data-zoom></div>
-        <div class="phone sm up"><img src="img/bz-participant-board.jpg" alt="Рейтинг плейлиста" data-zoom></div>
-        <div class="phone sm"><img src="img/bz-newcomer-match.jpg" alt="Совпадение вкуса с группой" data-zoom></div>
+        <div class="phone sm"><video muted loop playsinline preload="none" poster="video/meloman.jpg" aria-label="Голосование за трек" data-inview><source src="video/meloman.webm" type="video/webm"><source src="video/meloman.mp4" type="video/mp4"></video></div>
+        <div class="phone sm up"><video muted loop playsinline preload="none" poster="video/participant-a.jpg" aria-label="Рейтинг плейлиста" data-inview><source src="video/participant-a.webm" type="video/webm"><source src="video/participant-a.mp4" type="video/mp4"></video></div>
+        <div class="phone sm"><video muted loop playsinline preload="none" poster="video/newcomer.jpg" aria-label="Совпадение вкуса с группой" data-inview><source src="video/newcomer.webm" type="video/webm"><source src="video/newcomer.mp4" type="video/mp4"></video></div>
       </div>
       <figure class="photo-card"><img src="img/vit-pitch.jpg" alt="Питч «Балдёжного звука» в финале хакатона" data-zoom><figcaption>Питч в финале «Времени IT»</figcaption></figure>
     </div>
@@ -462,6 +459,6 @@
 </div>
 <div class="toast" id="toast">Почта скопирована</div>
 
-<script src="script.js?v=5"></script>
+<script src="script.js?v=6"></script>
 </body>
 </html>
