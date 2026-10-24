@@ -101,7 +101,7 @@ b { font-weight: 600; }
 
 /* ---------- hero ---------- */
 .hero { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 56px; align-items: center; padding: 80px 0 76px; }
-.hero-role { font: 500 16px var(--f-mono); color: var(--accent); margin: -10px 0 22px; }
+.hero-role { font: 500 clamp(19px, 2.2vw, 25px) var(--f-mono); color: var(--accent); margin: -6px 0 22px; }
 .caret { animation: blink 1s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 .scroll-hint { display: none; }
