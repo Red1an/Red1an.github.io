@@ -165,9 +165,14 @@ b { font-weight: 600; }
 .progress { position: fixed; top: 0; left: 0; height: 2px; width: 100%; z-index: 60; background: var(--accent); transform-origin: 0 50%; transform: scaleX(0); }
 
 /* ---------- about ---------- */
-.about-grid { max-width: 760px; }
+.about-grid { max-width: 820px; }
 .about-text p { font-size: 18.5px; margin-bottom: 18px; color: var(--muted); }
 .about-text b { color: var(--text); font-weight: 500; }
+.about-text .about-quote {
+  font: 500 clamp(26px, 3.2vw, 38px)/1.25 var(--f-head); letter-spacing: -.015em; color: var(--text);
+  margin-bottom: 28px; padding-left: 22px; border-left: 3px solid var(--accent);
+}
+.about-quote em { font-style: italic; color: var(--accent); }
 .about-text .about-facts { margin-top: 26px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 16px; }
 
 /* ---------- experience ---------- */
