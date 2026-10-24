@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=18">
+<link rel="stylesheet" href="style.css?v=19">
 </head>
 <body>
 
@@ -135,10 +135,55 @@
         <li><b>Разработал сервис сбора отчётов</b> из Telegram-каналов: обработка в реальном времени, очередь сравнения и дедупликация. На нём же — бэкенд админки с аналитикой и модерацией.</li>
         <li><b>Сделал работу с фото</b>: хранение в MinIO/S3, подписанные ссылки с ограниченным сроком жизни, несколько размеров под разные экраны.</li>
         <li><b>Настроил и поддерживаю инфраструктуру</b>: 13 контейнеров в Docker Compose на VPS, Nginx, CI/CD на GitHub Actions с деплоем только изменённых сервисов, бэкапы, разбор инцидентов.</li>
+        <li><b>Работаем по Agile</b>: спринты и Kanban-доска, GitHub Flow — отдельные ветки, pull request'ы и взаимное код-ревью (470+ PR в репозитории).</li>
       </ul>
       <div class="tags">
         <span>C#</span><span>.NET 9</span><span>ASP.NET Core</span><span>EF Core</span><span>PostgreSQL</span><span>Redis</span><span>MinIO / S3</span><span>YooKassa</span><span>Docker</span><span>Nginx</span><span>GitHub Actions</span>
       </div>
+    </div>
+  </article>
+  <article class="exp exp-sm reveal">
+    <div class="exp-side">
+      <div class="exp-date">10/2026</div>
+      <div class="exp-place">Санкт-Петербург</div>
+    </div>
+    <div class="exp-body">
+      <div class="exp-title">Хакатоны <span>· Backend Lead · ML</span></div>
+      <div class="exp-sub">Командные проекты за 1–7 дней</div>
+      <ul class="bullets exp-list">
+        <li><b>«Время IT» (ГУАП × Звук), финал</b>: лид бэкенда общего плейлиста — сервис на FastAPI, PostgreSQL + pgvector, рейтинг в реальном времени через WebSocket, Docker + Nginx.</li>
+        <li><b>RLT.Hack (Росэлторг)</b>: модель ранжирования поставщиков на LightGBM — реальный победитель в топ-10 в 53,5% лотов против 31,4% у бейзлайна.</li>
+      </ul>
+      <div class="tags sm"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>WebSocket</span><span>LightGBM</span></div>
+    </div>
+  </article>
+  <article class="exp exp-sm reveal">
+    <div class="exp-side">
+      <div class="exp-date">03 — 04/2026</div>
+      <div class="exp-place">Пет-проект</div>
+    </div>
+    <div class="exp-body">
+      <div class="exp-title">ReportBroker <span>· C#/.NET-разработчик</span></div>
+      <div class="exp-sub">Сервис отчётов по конверсии · <a href="https://github.com/Red1an/ReportBroker" target="_blank" rel="noopener">GitHub ↗</a></div>
+      <ul class="bullets exp-list">
+        <li>Спроектировал сервис на <b>Clean Architecture</b> (Domain, Application, Infrastructure, Api, Tests): запросы приходят через RabbitMQ, результат отдаётся по gRPC.</li>
+        <li>Дедупликация одинаковых отчётов, кэш статусов в Redis, контейнеризация в Docker Compose, юнит-тесты бизнес-логики.</li>
+      </ul>
+      <div class="tags sm"><span>C#</span><span>.NET</span><span>RabbitMQ</span><span>gRPC</span><span>Redis</span><span>Docker</span></div>
+    </div>
+  </article>
+  <article class="exp exp-sm reveal">
+    <div class="exp-side">
+      <div class="exp-date">04 — 05/2026</div>
+      <div class="exp-place">Санкт-Петербург</div>
+    </div>
+    <div class="exp-body">
+      <div class="exp-title">IT-школа НТЦ ПРОТЕЙ <span>· Обучение C++</span></div>
+      <div class="exp-sub">Курс «Быстрый C++тарт», сертификат</div>
+      <ul class="bullets exp-list">
+        <li>Итоговый проект — <b>многопоточный клиент-сервер на сокетах</b>: сервер параллельно обслуживает клиентов, клиент настраивается через JSON или CLI, тесты.</li>
+      </ul>
+      <div class="tags sm"><span>C++</span><span>CMake</span><span>Sockets</span><span>Threads</span></div>
     </div>
   </article>
 </section>

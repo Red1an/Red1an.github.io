@@ -568,3 +568,12 @@ b { font-weight: 600; }
 .exp-sub b { color: var(--accent); font-weight: 600; }
 .exp-list { gap: 14px; margin-top: 4px; }
 .exp-list li { font-size: 16.5px; line-height: 1.55; }
+
+/* ---------- secondary experience entries ---------- */
+.exp + .exp { margin-top: 16px; }
+.exp-sm { padding: 26px 36px; }
+.exp-sm .exp-title { font-size: 21px; }
+.exp-sm .exp-sub { margin-bottom: 12px; }
+.exp-sm .exp-list li { font-size: 15.5px; }
+.exp-sm .bullets { margin-bottom: 16px; }
+@media (max-width: 640px) { .exp-sm { padding: 22px; } }
