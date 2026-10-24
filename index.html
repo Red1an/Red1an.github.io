@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@800&family=Literata:opsz,wght@7..72,500;7..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=33">
+<link rel="stylesheet" href="style.css?v=35">
 </head>
 <body>
 <div class="progress" id="progress" aria-hidden="true"></div>
@@ -37,7 +37,6 @@
   <nav class="nav-links" id="navLinks">
     <a href="#about">Обо мне</a>
     <a href="#experience">Опыт</a>
-    <a href="#projects">Проекты</a>
     <a href="#labs">Учёба</a>
     <a href="#journey">Достижения</a>
     <a href="#skills">Навыки</a>
@@ -110,7 +109,7 @@
 
 <!-- ============ EXPERIENCE ============ -->
 <section class="wrap section" id="experience">
-  <div class="section-head reveal"><span class="section-num">02</span><h2>Опыт</h2></div>
+  <div class="section-head reveal"><span class="section-num">02</span><h2>Опыт и проекты</h2></div>
 
   <article class="exp reveal">
     <div class="exp-side">
@@ -120,6 +119,8 @@
     <div class="exp-body">
       <div class="exp-title">Нордкрофт <span>· C#/.NET Backend Developer</span></div>
       <div class="exp-sub">B2C-стартап, <b>5 000+ пользователей</b> · команда из 4 человек · <a href="https://app.nordkroft.ru" target="_blank" rel="noopener">app.nordkroft.ru ↗</a></div>
+      <p class="exp-lead">Приложение для рыбаков: <b>поездка на рыбалку за 2 минуты</b> — карта мест с поиском,
+        прогноз клёва и погоды, отчёты с водоёмов, поездки и сообщество.</p>
       <ul class="bullets exp-list">
         <li><b>Отвечаю за бэкенд продукта</b>: два сервиса на ASP.NET Core и PostgreSQL (280+ эндпоинтов, 50+ сущностей, 70+ миграций) — карта и места, отчёты, профили, админка, связка с ML-сервисом поиска мест.</li>
         <li><b>Сделал авторизацию</b>: JWT с refresh-токенами, вход через Яндекс, подтверждение по email-коду, гостевой доступ.</li>
@@ -132,21 +133,80 @@
       <div class="tags">
         <span>C#</span><span>.NET 9</span><span>ASP.NET Core</span><span>EF Core</span><span>PostgreSQL</span><span>Redis</span><span>MinIO / S3</span><span>YooKassa</span><span>Docker</span><span>Nginx</span><span>GitHub Actions</span>
       </div>
+      <div class="nk-mini">
+        <div><b><span data-count="5000">0</span>+</b><span>пользователей</span></div>
+        <div><b>Веб</b><span>основной продукт + Android в RuStore</span></div>
+        <div><b>Покупки</b><span>первые внутренние покупки через YooKassa</span></div>
+      </div>
+      <div class="project-links"><a class="link" href="https://app.nordkroft.ru" target="_blank" rel="noopener">Открыть приложение ↗</a><a class="link" href="https://www.rustore.ru/catalog/app/ru.nordkroft.app" target="_blank" rel="noopener">RuStore ↗</a></div>
+      <div class="exp-media devices">
+      <div class="laptop"><div class="laptop-screen"><img src="img/nk-landing.jpg" alt="Лендинг Нордкрофт" data-zoom></div><div class="laptop-base"></div></div>
+      <div class="phone"><img src="img/nk-app-mobile.jpg" alt="Карта мест в приложении Нордкрофт" data-zoom></div>
+    </div>
+    </div>
+  </article>
+  <article class="exp reveal">
+    <div class="exp-side">
+      <div class="exp-date">10/2026</div>
+      <div class="exp-place">Хакатон · ГУАП × Звук</div>
+    </div>
+    <div class="exp-body">
+      <div class="exp-title">Балдёжный звук <span>· Backend Lead</span></div>
+      <div class="exp-sub project-meta"><span class="pill accent">Финал</span><span class="pill">Хакатон «Время IT»</span></div>
+      <p class="exp-lead">Общий плейлист для любой компании: участники предлагают треки и свайпают их,
+        в плейлисте — лучшие по рейтингу. Есть «Микс» с автодозаполнением и <b>сборный плейлист</b> из плейлистов групп.</p>
+      <p>Вышли в <b>финал</b> и питчили продукт перед экспертами: каждый из них сканировал QR и пробовал
+        приложение прямо во время защиты. Я был лидом бэкенда — структура сервиса, авторизация, плейлисты
+        и режимы вступления, сборные плейлисты с баллами групп, Docker + Nginx и презентация.</p>
+      <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL + pgvector</span><span>WebSocket</span><span>MAEST / MuLan</span><span>GigaChat</span><span>React</span><span>Docker</span></div>
+      <div class="exp-media split">
+      <div class="phones-row">
+        <div class="phone sm"><video muted loop playsinline preload="none" poster="video/organizer.jpg" aria-label="Создание плейлиста и приглашение" data-inview><source src="video/organizer.webm" type="video/webm"><source src="video/organizer.mp4" type="video/mp4"></video></div>
+        <div class="phone sm up"><video muted loop playsinline preload="none" poster="video/participant-a.jpg" aria-label="Голосование и рейтинг" data-inview><source src="video/participant-a.webm" type="video/webm"><source src="video/participant-a.mp4" type="video/mp4"></video></div>
+        <div class="phone sm"><video muted loop playsinline preload="none" poster="video/small.jpg" aria-label="Микс: система подбирает похожие треки" data-inview><source src="video/small.webm" type="video/webm"><source src="video/small.mp4" type="video/mp4"></video></div>
+      </div>
+      <figure class="photo-card"><img src="img/vit-pitch.jpg" alt="Питч «Балдёжного звука» в финале хакатона" data-zoom><figcaption>Питч в финале «Времени IT»</figcaption></figure>
+    </div>
+    </div>
+  </article>
+  <article class="exp reveal">
+    <div class="exp-side">
+      <div class="exp-date">10/2026</div>
+      <div class="exp-place">Хакатон · Росэлторг</div>
+    </div>
+    <div class="exp-body">
+      <div class="exp-title">Подбор поставщиков для госзакупок <span>· ML · поиск</span></div>
+      <div class="exp-sub project-meta"><span class="pill">RLT.Hack</span></div>
+      <p class="exp-lead">Сервис подсказывает заказчику, <b>кого позвать на закупку</b>: кто реально подаст заявку
+        и сможет выиграть, и каких новых поставщиков привлечь ради конкуренции.</p>
+      <ul class="bullets exp-list">
+        <li>Обучил <b>модель ранжирования</b> (LightGBM, learning-to-rank) на 2 годах закупок: 600 тыс. лотов, 1 млн заявок.</li>
+        <li>Реальный победитель в нашем топ-10 в <b>53,5%</b> лотов против 31,4% у бейзлайна — на квартале, который модель не видела.</li>
+        <li>Написал поиск с объяснением, почему компания в выдаче, и вёл процессы в команде.</li>
+      </ul>
+      <div class="tags"><span>Python</span><span>LightGBM</span><span>scikit-learn</span><span>pandas</span><span>FastAPI</span><span>PostgreSQL</span></div>
+      <div class="project-links"><a class="link" href="https://github.com/Red1an/rlt_hakaton" target="_blank" rel="noopener">GitHub ↗</a></div>
+      <div class="exp-media shot">
+      <figure class="browser">
+        <div class="browser-bar"><i></i><i></i><i></i><span>Подбор поставщиков</span></div>
+        <img src="img/rlt-ui.jpg" alt="Интерфейс подбора поставщиков" data-zoom>
+      </figure>
+      <div class="caption">Выдача с объяснением «почему рекомендуем» · на скрине демо-данные</div>
+    </div>
     </div>
   </article>
   <article class="exp exp-sm reveal">
     <div class="exp-side">
-      <div class="exp-date">10/2026</div>
+      <div class="exp-date">04 — 05/2026</div>
       <div class="exp-place">Санкт-Петербург</div>
     </div>
     <div class="exp-body">
-      <div class="exp-title">Хакатоны <span>· Backend Lead · ML</span></div>
-      <div class="exp-sub">Командные проекты за 1–7 дней</div>
+      <div class="exp-title">IT-школа НТЦ ПРОТЕЙ <span>· Обучение C++</span></div>
+      <div class="exp-sub">Курс «Быстрый C++тарт», сертификат</div>
       <ul class="bullets exp-list">
-        <li><b>«Время IT» (ГУАП × Звук), финал</b>: лид бэкенда общего плейлиста — сервис на FastAPI, PostgreSQL + pgvector, рейтинг в реальном времени через WebSocket, Docker + Nginx.</li>
-        <li><b>RLT.Hack (Росэлторг)</b>: модель ранжирования поставщиков на LightGBM — реальный победитель в топ-10 в 53,5% лотов против 31,4% у бейзлайна.</li>
+        <li>Итоговый проект — <b>многопоточный клиент-сервер на сокетах</b>: сервер параллельно обслуживает клиентов, клиент настраивается через JSON или CLI, тесты.</li>
       </ul>
-      <div class="tags sm"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>WebSocket</span><span>LightGBM</span></div>
+      <div class="tags sm"><span>C++</span><span>CMake</span><span>Sockets</span><span>Threads</span></div>
     </div>
   </article>
   <article class="exp exp-sm reveal">
@@ -166,110 +226,24 @@
   </article>
   <article class="exp exp-sm reveal">
     <div class="exp-side">
-      <div class="exp-date">04 — 05/2026</div>
-      <div class="exp-place">Санкт-Петербург</div>
+      <div class="exp-date">09/2025 — сейчас</div>
+      <div class="exp-place">Пет-проект</div>
     </div>
     <div class="exp-body">
-      <div class="exp-title">IT-школа НТЦ ПРОТЕЙ <span>· Обучение C++</span></div>
-      <div class="exp-sub">Курс «Быстрый C++тарт», сертификат</div>
-      <ul class="bullets exp-list">
-        <li>Итоговый проект — <b>многопоточный клиент-сервер на сокетах</b>: сервер параллельно обслуживает клиентов, клиент настраивается через JSON или CLI, тесты.</li>
-      </ul>
-      <div class="tags sm"><span>C++</span><span>CMake</span><span>Sockets</span><span>Threads</span></div>
-    </div>
-  </article>
-</section>
-
-<!-- ============ PROJECTS ============ -->
-<section class="wrap section" id="projects">
-  <div class="section-head reveal"><span class="section-num">03</span><h2>Проекты</h2></div>
-
-  <!-- Нордкрофт -->
-  <article class="project feature reveal">
-    <div class="project-info">
-      <div class="project-meta"><span class="pill accent">В продакшене</span><span class="pill">2025 — сейчас</span></div>
-      <h3>Нордкрофт</h3>
-      <p class="project-lead">Приложение для рыбаков: <b>поездка на рыбалку за 2 минуты</b> — карта мест с поиском,
-        прогноз клёва и погоды, отчёты с водоёмов, поездки и сообщество.</p>
-      <p>С проектом взяли <b>2 место на ТехноПитере</b>, <b>3 место в «Я в деле»</b>, вышли в финал «Цифры» и прошли отбор на HSE FEST.
-        Моя зона — весь бэкенд и инфраструктура.</p>
-      <div class="nk-mini">
-        <div><b><span data-count="5000">0</span>+</b><span>пользователей</span></div>
-        <div><b>Веб</b><span>основной продукт + Android в RuStore</span></div>
-        <div><b>Покупки</b><span>первые внутренние покупки через YooKassa</span></div>
-      </div>
-      <div class="tags"><span>C#</span><span>ASP.NET Core</span><span>PostgreSQL</span><span>Redis</span><span>YooKassa</span><span>amoCRM</span><span>Docker</span></div>
-      <div class="project-links"><a class="link" href="https://app.nordkroft.ru" target="_blank" rel="noopener">Открыть приложение ↗</a><a class="link" href="https://www.rustore.ru/catalog/app/ru.nordkroft.app" target="_blank" rel="noopener">RuStore ↗</a></div>
-    </div>
-    <div class="project-visual devices">
-      <div class="laptop"><div class="laptop-screen"><img src="img/nk-landing.jpg" alt="Лендинг Нордкрофт" data-zoom></div><div class="laptop-base"></div></div>
-      <div class="phone"><img src="img/nk-app-mobile.jpg" alt="Карта мест в приложении Нордкрофт" data-zoom></div>
-    </div>
-  </article>
-
-
-  <!-- Балдёжный звук -->
-  <article class="project feature reverse reveal">
-    <div class="project-info">
-      <div class="project-meta"><span class="pill accent">Финал</span><span class="pill">Хакатон «Время IT» · ГУАП × Звук · 10/2026</span></div>
-      <h3>Балдёжный звук</h3>
-      <p class="project-lead">Общий плейлист для любой компании: участники предлагают треки и свайпают их,
-        в плейлисте — лучшие по рейтингу. Есть «Микс» с автодозаполнением и <b>сборный плейлист</b> из плейлистов групп.</p>
-      <p>Вышли в <b>финал</b> и питчили продукт перед экспертами: каждый из них сканировал QR и пробовал
-        приложение прямо во время защиты. Я был лидом бэкенда — структура сервиса, авторизация, плейлисты
-        и режимы вступления, сборные плейлисты с баллами групп, Docker + Nginx и презентация.</p>
-      <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL + pgvector</span><span>WebSocket</span><span>MAEST / MuLan</span><span>GigaChat</span><span>React</span><span>Docker</span></div>
-    </div>
-    <div class="project-visual stack">
-      <div class="phones-row">
-        <div class="phone sm"><video muted loop playsinline preload="none" poster="video/organizer.jpg" aria-label="Создание плейлиста и приглашение" data-inview><source src="video/organizer.webm" type="video/webm"><source src="video/organizer.mp4" type="video/mp4"></video></div>
-        <div class="phone sm up"><video muted loop playsinline preload="none" poster="video/participant-a.jpg" aria-label="Голосование и рейтинг" data-inview><source src="video/participant-a.webm" type="video/webm"><source src="video/participant-a.mp4" type="video/mp4"></video></div>
-        <div class="phone sm"><video muted loop playsinline preload="none" poster="video/small.jpg" aria-label="Микс: система подбирает похожие треки" data-inview><source src="video/small.webm" type="video/webm"><source src="video/small.mp4" type="video/mp4"></video></div>
-      </div>
-      <figure class="photo-card"><img src="img/vit-pitch.jpg" alt="Питч «Балдёжного звука» в финале хакатона" data-zoom><figcaption>Питч в финале «Времени IT»</figcaption></figure>
-    </div>
-  </article>
-
-  <!-- RLT.Hack -->
-  <article class="project feature reveal">
-    <div class="project-info">
-      <div class="project-meta"><span class="pill">Хакатон RLT.Hack · Росэлторг · 10/2026</span></div>
-      <h3>Подбор поставщиков для госзакупок</h3>
-      <p class="project-lead">Сервис подсказывает заказчику, <b>кого позвать на закупку</b>: кто реально подаст заявку
-        и сможет выиграть, и каких новых поставщиков привлечь ради конкуренции.</p>
-      <ul class="bullets">
-        <li>Обучил <b>модель ранжирования</b> (LightGBM, learning-to-rank) на 2 годах закупок: 600 тыс. лотов, 1 млн заявок.</li>
-        <li>Реальный победитель в нашем топ-10 в <b>53,5%</b> лотов против 31,4% у бейзлайна — на квартале, который модель не видела.</li>
-        <li>Написал поиск с объяснением, почему компания в выдаче, и вёл процессы в команде.</li>
-      </ul>
-      <div class="tags"><span>Python</span><span>LightGBM</span><span>scikit-learn</span><span>pandas</span><span>FastAPI</span><span>PostgreSQL</span></div>
-      <div class="project-links"><a class="link" href="https://github.com/Red1an/rlt_hakaton" target="_blank" rel="noopener">GitHub ↗</a></div>
-    </div>
-    <div class="project-visual stack">
-      <figure class="browser">
-        <div class="browser-bar"><i></i><i></i><i></i><span>Подбор поставщиков</span></div>
-        <img src="img/rlt-ui.jpg" alt="Интерфейс подбора поставщиков" data-zoom>
-      </figure>
-      <div class="caption">Выдача с объяснением «почему рекомендуем» · на скрине демо-данные</div>
-    </div>
-  </article>
-
-  <!-- LifeHub -->
-  <article class="card proj-card proj-wide reveal">
-    <figure class="lab-img"><img src="img/lifehub.jpg" alt="Главный экран LifeHub" data-zoom loading="lazy"></figure>
-    <div class="proj-wide-body">
-      <h4>LifeHub</h4>
+      <div class="exp-title">LifeHub <span>· TypeScript · Node.js</span></div>
+      <div class="exp-sub project-meta">Личный хаб мини-приложений</div>
       <p>Личный хаб мини-приложений: финансы, заметки, привычки, планировщик, голосовой помощник «Джарвис»
         и <b>тренажёр гитары</b>. Работает на ПК и с телефона, модули пишет нейросеть по SDK хаба.</p>
       <div class="tags sm"><span>TypeScript</span><span>Node.js</span><span>React</span><span>SQLite</span></div>
-      <a class="link" href="https://github.com/Red1an/LifeHub" target="_blank" rel="noopener">GitHub ↗</a>
+      <div class="project-links"><a class="link" href="https://github.com/Red1an/LifeHub" target="_blank" rel="noopener">GitHub ↗</a></div>
+      <figure class="exp-media shot"><img src="img/lifehub.jpg" alt="Главный экран LifeHub" data-zoom loading="lazy"></figure>
     </div>
   </article>
 </section>
 
 <!-- ============ LABS ============ -->
 <section class="wrap section" id="labs">
-  <div class="section-head reveal"><span class="section-num">04</span><h2>Учебные проекты</h2></div>
+  <div class="section-head reveal"><span class="section-num">03</span><h2>Учебные проекты</h2></div>
   <p class="section-lead reveal">Лабы, которые я делаю не «на сдачу», а как маленькие исследования.</p>
 
   <article class="project feature lab reveal">
@@ -310,7 +284,7 @@
 
 <!-- ============ JOURNEY ============ -->
 <section class="wrap section" id="journey">
-  <div class="section-head reveal"><span class="section-num">05</span><h2>Хакатоны и акселераторы</h2></div>
+  <div class="section-head reveal"><span class="section-num">04</span><h2>Хакатоны и акселераторы</h2></div>
   <nav class="jump reveal" aria-label="Разделы достижений">
     <a href="#timeline">Таймлайн</a><a href="#photos">Фото</a><a href="#certs-title">Сертификаты</a>
   </nav>
@@ -401,7 +375,7 @@
 
 <!-- ============ SKILLS ============ -->
 <section class="wrap section" id="skills">
-  <div class="section-head reveal"><span class="section-num">06</span><h2>Навыки</h2></div>
+  <div class="section-head reveal"><span class="section-num">05</span><h2>Навыки</h2></div>
   <dl class="skill-rows reveal">
     <div><dt>Языки</dt><dd>C#, Python, SQL, TypeScript, C++</dd></div>
     <div><dt>.NET</dt><dd>ASP.NET Core, EF Core, LINQ, async/await, gRPC, Clean Architecture, Unit Testing</dd></div>
@@ -426,7 +400,7 @@
 
 <!-- ============ LIFE ============ -->
 <section class="wrap section" id="life">
-  <div class="section-head reveal"><span class="section-num">07</span><h2>Вне кода</h2></div>
+  <div class="section-head reveal"><span class="section-num">06</span><h2>Вне кода</h2></div>
   <p class="section-lead reveal">Что ещё про меня стоит знать.</p>
   <div class="life-grid">
     <article class="life-card big reveal">
@@ -480,6 +454,6 @@
 </div>
 <div class="toast" id="toast">Почта скопирована</div>
 
-<script src="script.js?v=9"></script>
+<script src="script.js?v=10"></script>
 </body>
 </html>

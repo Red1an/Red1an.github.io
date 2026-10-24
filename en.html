@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@800&family=Literata:opsz,wght@7..72,500;7..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=33">
+<link rel="stylesheet" href="style.css?v=35">
 </head>
 <body>
 <div class="progress" id="progress" aria-hidden="true"></div>
@@ -37,7 +37,6 @@
   <nav class="nav-links" id="navLinks">
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
     <a href="#labs">University</a>
     <a href="#journey">Achievements</a>
     <a href="#skills">Skills</a>
@@ -110,7 +109,7 @@
 
 <!-- ============ EXPERIENCE ============ -->
 <section class="wrap section" id="experience">
-  <div class="section-head reveal"><span class="section-num">02</span><h2>Experience</h2></div>
+  <div class="section-head reveal"><span class="section-num">02</span><h2>Experience and projects</h2></div>
 
   <article class="exp reveal">
     <div class="exp-side">
@@ -120,6 +119,8 @@
     <div class="exp-body">
       <div class="exp-title">Nordkroft <span>· C#/.NET Backend Developer</span></div>
       <div class="exp-sub">B2C startup, <b>5,000+ users</b> · team of 4 · <a href="https://app.nordkroft.ru" target="_blank" rel="noopener">app.nordkroft.ru ↗</a></div>
+      <p class="exp-lead">An app for anglers: <b>plan a fishing trip in 2 minutes</b> — a searchable map of spots,
+        bite and weather forecasts, catch reports, trips and a community.</p>
       <ul class="bullets exp-list">
         <li><b>Own the product backend</b>: two ASP.NET Core services on PostgreSQL (280+ endpoints, 50+ entities, 70+ migrations) — map and spots, reports, profiles, admin panel, and the bridge to the spot-search ML service.</li>
         <li><b>Built authentication</b>: JWT with refresh tokens, Yandex sign-in, email code verification, guest access.</li>
@@ -132,21 +133,80 @@
       <div class="tags">
         <span>C#</span><span>.NET 9</span><span>ASP.NET Core</span><span>EF Core</span><span>PostgreSQL</span><span>Redis</span><span>MinIO / S3</span><span>YooKassa</span><span>Docker</span><span>Nginx</span><span>GitHub Actions</span>
       </div>
+      <div class="nk-mini">
+        <div><b><span data-count="5000">0</span>+</b><span>users</span></div>
+        <div><b>Web</b><span>main product + Android on RuStore</span></div>
+        <div><b>Sales</b><span>first in-app purchases via YooKassa</span></div>
+      </div>
+      <div class="project-links"><a class="link" href="https://app.nordkroft.ru" target="_blank" rel="noopener">Open the app ↗</a><a class="link" href="https://www.rustore.ru/catalog/app/ru.nordkroft.app" target="_blank" rel="noopener">RuStore ↗</a></div>
+      <div class="exp-media devices">
+      <div class="laptop"><div class="laptop-screen"><img src="img/nk-landing.jpg" alt="Nordkroft landing page" data-zoom></div><div class="laptop-base"></div></div>
+      <div class="phone"><img src="img/nk-app-mobile.jpg" alt="Map of spots in the Nordkroft app" data-zoom></div>
+    </div>
+    </div>
+  </article>
+  <article class="exp reveal">
+    <div class="exp-side">
+      <div class="exp-date">10/2026</div>
+      <div class="exp-place">Hackathon · SUAI × Zvuk</div>
+    </div>
+    <div class="exp-body">
+      <div class="exp-title">Baldezhny Zvuk <span>· Backend Lead</span></div>
+      <div class="exp-sub project-meta"><span class="pill accent">Final</span><span class="pill">Vremya IT hackathon</span></div>
+      <p class="exp-lead">A shared playlist for any group: members suggest tracks and swipe on them, and the playlist
+        keeps the top-rated ones. There's a "Mix" mode with auto-fill and a <b>composite playlist</b> built from group playlists.</p>
+      <p>We reached the <b>final</b> and pitched the product to the jury: every judge scanned a QR code and tried the app
+        live during our pitch. I was the backend lead — service structure, authentication, playlists and join modes,
+        composite playlists with group scoring, Docker + Nginx and the pitch deck.</p>
+      <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL + pgvector</span><span>WebSocket</span><span>MAEST / MuLan</span><span>GigaChat</span><span>React</span><span>Docker</span></div>
+      <div class="exp-media split">
+      <div class="phones-row">
+        <div class="phone sm"><video muted loop playsinline preload="none" poster="video/organizer.jpg" aria-label="Creating a playlist and inviting friends" data-inview><source src="video/organizer.webm" type="video/webm"><source src="video/organizer.mp4" type="video/mp4"></video></div>
+        <div class="phone sm up"><video muted loop playsinline preload="none" poster="video/participant-a.jpg" aria-label="Voting and the leaderboard" data-inview><source src="video/participant-a.webm" type="video/webm"><source src="video/participant-a.mp4" type="video/mp4"></video></div>
+        <div class="phone sm"><video muted loop playsinline preload="none" poster="video/small.jpg" aria-label="Mix: the system adds similar tracks" data-inview><source src="video/small.webm" type="video/webm"><source src="video/small.mp4" type="video/mp4"></video></div>
+      </div>
+      <figure class="photo-card"><img src="img/vit-pitch.jpg" alt="Pitching Baldezhny Zvuk in the hackathon final" data-zoom><figcaption>Pitching in the Vremya IT final</figcaption></figure>
+    </div>
+    </div>
+  </article>
+  <article class="exp reveal">
+    <div class="exp-side">
+      <div class="exp-date">10/2026</div>
+      <div class="exp-place">Hackathon · Roseltorg</div>
+    </div>
+    <div class="exp-body">
+      <div class="exp-title">Supplier matching for public procurement <span>· ML · search</span></div>
+      <div class="exp-sub project-meta"><span class="pill">RLT.Hack</span></div>
+      <p class="exp-lead">The service tells a buyer <b>whom to invite to a tender</b>: who will actually bid and can win,
+        and which new suppliers to bring in for more competition.</p>
+      <ul class="bullets exp-list">
+        <li>Trained a <b>ranking model</b> (LightGBM, learning-to-rank) on two years of tenders: 600k lots, 1M bids.</li>
+        <li>The actual winner lands in our top 10 for <b>53.5%</b> of lots versus 31.4% for the baseline — on a quarter the model never saw.</li>
+        <li>Built the search with an explanation of why each company is recommended, and ran the team's process.</li>
+      </ul>
+      <div class="tags"><span>Python</span><span>LightGBM</span><span>scikit-learn</span><span>pandas</span><span>FastAPI</span><span>PostgreSQL</span></div>
+      <div class="project-links"><a class="link" href="https://github.com/Red1an/rlt_hakaton" target="_blank" rel="noopener">GitHub ↗</a></div>
+      <div class="exp-media shot">
+      <figure class="browser">
+        <div class="browser-bar"><i></i><i></i><i></i><span>Supplier matching</span></div>
+        <img src="img/rlt-ui.jpg" alt="Supplier matching interface" data-zoom>
+      </figure>
+      <div class="caption">Results with a "why we recommend" explanation · demo data on the screenshot</div>
+    </div>
     </div>
   </article>
   <article class="exp exp-sm reveal">
     <div class="exp-side">
-      <div class="exp-date">10/2026</div>
+      <div class="exp-date">04 — 05/2026</div>
       <div class="exp-place">Saint Petersburg</div>
     </div>
     <div class="exp-body">
-      <div class="exp-title">Hackathons <span>· Backend Lead · ML</span></div>
-      <div class="exp-sub">Team projects built in 1–7 days</div>
+      <div class="exp-title">PROTEI IT school <span>· C++ training</span></div>
+      <div class="exp-sub">"Fast C++ Start" course, certificate</div>
       <ul class="bullets exp-list">
-        <li><b>Vremya IT (SUAI × Zvuk), finalist</b>: backend lead for a shared playlist — a FastAPI service, PostgreSQL + pgvector, real-time ratings over WebSocket, Docker + Nginx.</li>
-        <li><b>RLT.Hack (Roseltorg)</b>: a LightGBM supplier ranking model — the actual winner lands in the top 10 for 53.5% of lots versus 31.4% for the baseline.</li>
+        <li>Final project — a <b>multithreaded socket client–server</b>: the server handles clients in parallel, the client is configured via JSON or CLI, with tests.</li>
       </ul>
-      <div class="tags sm"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>WebSocket</span><span>LightGBM</span></div>
+      <div class="tags sm"><span>C++</span><span>CMake</span><span>Sockets</span><span>Threads</span></div>
     </div>
   </article>
   <article class="exp exp-sm reveal">
@@ -166,110 +226,24 @@
   </article>
   <article class="exp exp-sm reveal">
     <div class="exp-side">
-      <div class="exp-date">04 — 05/2026</div>
-      <div class="exp-place">Saint Petersburg</div>
+      <div class="exp-date">09/2025 — now</div>
+      <div class="exp-place">Pet project</div>
     </div>
     <div class="exp-body">
-      <div class="exp-title">PROTEI IT school <span>· C++ training</span></div>
-      <div class="exp-sub">"Fast C++ Start" course, certificate</div>
-      <ul class="bullets exp-list">
-        <li>Final project — a <b>multithreaded socket client–server</b>: the server handles clients in parallel, the client is configured via JSON or CLI, with tests.</li>
-      </ul>
-      <div class="tags sm"><span>C++</span><span>CMake</span><span>Sockets</span><span>Threads</span></div>
-    </div>
-  </article>
-</section>
-
-<!-- ============ PROJECTS ============ -->
-<section class="wrap section" id="projects">
-  <div class="section-head reveal"><span class="section-num">03</span><h2>Projects</h2></div>
-
-  <!-- Nordkroft -->
-  <article class="project feature reveal">
-    <div class="project-info">
-      <div class="project-meta"><span class="pill accent">In production</span><span class="pill">2025 — now</span></div>
-      <h3>Nordkroft</h3>
-      <p class="project-lead">An app for anglers: <b>plan a fishing trip in 2 minutes</b> — a searchable map of spots,
-        bite and weather forecasts, catch reports, trips and a community.</p>
-      <p>With this project we took <b>2nd place at TechnoPiter</b> and <b>3rd place at Ya v Dele</b>, reached the Tsifra final
-        and were selected for HSE FEST. My area is the entire backend and infrastructure.</p>
-      <div class="nk-mini">
-        <div><b><span data-count="5000">0</span>+</b><span>users</span></div>
-        <div><b>Web</b><span>main product + Android on RuStore</span></div>
-        <div><b>Sales</b><span>first in-app purchases via YooKassa</span></div>
-      </div>
-      <div class="tags"><span>C#</span><span>ASP.NET Core</span><span>PostgreSQL</span><span>Redis</span><span>YooKassa</span><span>amoCRM</span><span>Docker</span></div>
-      <div class="project-links"><a class="link" href="https://app.nordkroft.ru" target="_blank" rel="noopener">Open the app ↗</a><a class="link" href="https://www.rustore.ru/catalog/app/ru.nordkroft.app" target="_blank" rel="noopener">RuStore ↗</a></div>
-    </div>
-    <div class="project-visual devices">
-      <div class="laptop"><div class="laptop-screen"><img src="img/nk-landing.jpg" alt="Nordkroft landing page" data-zoom></div><div class="laptop-base"></div></div>
-      <div class="phone"><img src="img/nk-app-mobile.jpg" alt="Map of spots in the Nordkroft app" data-zoom></div>
-    </div>
-  </article>
-
-
-  <!-- Baldezhny Zvuk -->
-  <article class="project feature reverse reveal">
-    <div class="project-info">
-      <div class="project-meta"><span class="pill accent">Final</span><span class="pill">Vremya IT hackathon · SUAI × Zvuk · 10/2026</span></div>
-      <h3>Baldezhny Zvuk</h3>
-      <p class="project-lead">A shared playlist for any group: members suggest tracks and swipe on them, and the playlist
-        keeps the top-rated ones. There's a "Mix" mode with auto-fill and a <b>composite playlist</b> built from group playlists.</p>
-      <p>We reached the <b>final</b> and pitched the product to the jury: every judge scanned a QR code and tried the app
-        live during our pitch. I was the backend lead — service structure, authentication, playlists and join modes,
-        composite playlists with group scoring, Docker + Nginx and the pitch deck.</p>
-      <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL + pgvector</span><span>WebSocket</span><span>MAEST / MuLan</span><span>GigaChat</span><span>React</span><span>Docker</span></div>
-    </div>
-    <div class="project-visual stack">
-      <div class="phones-row">
-        <div class="phone sm"><video muted loop playsinline preload="none" poster="video/organizer.jpg" aria-label="Creating a playlist and inviting friends" data-inview><source src="video/organizer.webm" type="video/webm"><source src="video/organizer.mp4" type="video/mp4"></video></div>
-        <div class="phone sm up"><video muted loop playsinline preload="none" poster="video/participant-a.jpg" aria-label="Voting and the leaderboard" data-inview><source src="video/participant-a.webm" type="video/webm"><source src="video/participant-a.mp4" type="video/mp4"></video></div>
-        <div class="phone sm"><video muted loop playsinline preload="none" poster="video/small.jpg" aria-label="Mix: the system adds similar tracks" data-inview><source src="video/small.webm" type="video/webm"><source src="video/small.mp4" type="video/mp4"></video></div>
-      </div>
-      <figure class="photo-card"><img src="img/vit-pitch.jpg" alt="Pitching Baldezhny Zvuk in the hackathon final" data-zoom><figcaption>Pitching in the Vremya IT final</figcaption></figure>
-    </div>
-  </article>
-
-  <!-- RLT.Hack -->
-  <article class="project feature reveal">
-    <div class="project-info">
-      <div class="project-meta"><span class="pill">RLT.Hack · Roseltorg · 10/2026</span></div>
-      <h3>Supplier matching for public procurement</h3>
-      <p class="project-lead">The service tells a buyer <b>whom to invite to a tender</b>: who will actually bid and can win,
-        and which new suppliers to bring in for more competition.</p>
-      <ul class="bullets">
-        <li>Trained a <b>ranking model</b> (LightGBM, learning-to-rank) on two years of tenders: 600k lots, 1M bids.</li>
-        <li>The actual winner lands in our top 10 for <b>53.5%</b> of lots versus 31.4% for the baseline — on a quarter the model never saw.</li>
-        <li>Built the search with an explanation of why each company is recommended, and ran the team's process.</li>
-      </ul>
-      <div class="tags"><span>Python</span><span>LightGBM</span><span>scikit-learn</span><span>pandas</span><span>FastAPI</span><span>PostgreSQL</span></div>
-      <div class="project-links"><a class="link" href="https://github.com/Red1an/rlt_hakaton" target="_blank" rel="noopener">GitHub ↗</a></div>
-    </div>
-    <div class="project-visual stack">
-      <figure class="browser">
-        <div class="browser-bar"><i></i><i></i><i></i><span>Supplier matching</span></div>
-        <img src="img/rlt-ui.jpg" alt="Supplier matching interface" data-zoom>
-      </figure>
-      <div class="caption">Results with a "why we recommend" explanation · demo data on the screenshot</div>
-    </div>
-  </article>
-
-  <!-- LifeHub -->
-  <article class="card proj-card proj-wide reveal">
-    <figure class="lab-img"><img src="img/lifehub.jpg" alt="LifeHub home screen" data-zoom loading="lazy"></figure>
-    <div class="proj-wide-body">
-      <h4>LifeHub</h4>
+      <div class="exp-title">LifeHub <span>· TypeScript · Node.js</span></div>
+      <div class="exp-sub project-meta">Personal hub of mini-apps</div>
       <p>A personal hub of mini-apps: finances, notes, habits, a planner, the "Jarvis" voice assistant and a
         <b>guitar trainer</b>. Works on desktop and phone; new modules are written by an AI against the hub's SDK.</p>
       <div class="tags sm"><span>TypeScript</span><span>Node.js</span><span>React</span><span>SQLite</span></div>
-      <a class="link" href="https://github.com/Red1an/LifeHub" target="_blank" rel="noopener">GitHub ↗</a>
+      <div class="project-links"><a class="link" href="https://github.com/Red1an/LifeHub" target="_blank" rel="noopener">GitHub ↗</a></div>
+      <figure class="exp-media shot"><img src="img/lifehub.jpg" alt="LifeHub home screen" data-zoom loading="lazy"></figure>
     </div>
   </article>
 </section>
 
 <!-- ============ LABS ============ -->
 <section class="wrap section" id="labs">
-  <div class="section-head reveal"><span class="section-num">04</span><h2>University projects</h2></div>
+  <div class="section-head reveal"><span class="section-num">03</span><h2>University projects</h2></div>
   <p class="section-lead reveal">Labs I treat as small research projects rather than homework.</p>
 
   <article class="project feature lab reveal">
@@ -310,7 +284,7 @@
 
 <!-- ============ JOURNEY ============ -->
 <section class="wrap section" id="journey">
-  <div class="section-head reveal"><span class="section-num">05</span><h2>Hackathons and accelerators</h2></div>
+  <div class="section-head reveal"><span class="section-num">04</span><h2>Hackathons and accelerators</h2></div>
   <nav class="jump reveal" aria-label="Achievement sections">
     <a href="#timeline">Timeline</a><a href="#photos">Photos</a><a href="#certs-title">Certificates</a>
   </nav>
@@ -401,7 +375,7 @@
 
 <!-- ============ SKILLS ============ -->
 <section class="wrap section" id="skills">
-  <div class="section-head reveal"><span class="section-num">06</span><h2>Skills</h2></div>
+  <div class="section-head reveal"><span class="section-num">05</span><h2>Skills</h2></div>
   <dl class="skill-rows reveal">
     <div><dt>Languages</dt><dd>C#, Python, SQL, TypeScript, C++</dd></div>
     <div><dt>.NET</dt><dd>ASP.NET Core, EF Core, LINQ, async/await, gRPC, Clean Architecture, Unit Testing</dd></div>
@@ -426,7 +400,7 @@
 
 <!-- ============ LIFE ============ -->
 <section class="wrap section" id="life">
-  <div class="section-head reveal"><span class="section-num">07</span><h2>Beyond code</h2></div>
+  <div class="section-head reveal"><span class="section-num">06</span><h2>Beyond code</h2></div>
   <p class="section-lead reveal">A few more things about me.</p>
   <div class="life-grid">
     <article class="life-card big reveal">
@@ -480,6 +454,6 @@
 </div>
 <div class="toast" id="toast">Email copied</div>
 
-<script src="script.js?v=9"></script>
+<script src="script.js?v=10"></script>
 </body>
 </html>

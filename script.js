@@ -180,7 +180,7 @@ updateProgress();
 // ---------- scroll-linked: timeline line and project parallax ----------
 const timeline = document.getElementById('timeline');
 const tlItems = timeline ? [...timeline.querySelectorAll('.tl-item')] : [];
-const visuals = [...document.querySelectorAll('.project .project-visual, .proj-wide .lab-img')];
+const visuals = [...document.querySelectorAll('.exp-media')];
 const calm = matchMedia('(prefers-reduced-motion: reduce)');
 let ticking = false;
 const onScroll = () => {
