@@ -399,7 +399,7 @@ b { font-weight: 600; }
 .edu-list span { font-family: var(--f-mono); color: var(--accent); white-space: nowrap; }
 
 /* ---------- life ---------- */
-.life-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 16px; }
+.life-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .life-card {
   padding: 28px; border-radius: var(--radius); background: var(--card); border: 1px solid var(--line);
   display: flex; flex-direction: column; justify-content: flex-end; gap: 8px; min-height: 230px;
@@ -490,6 +490,7 @@ b { font-weight: 600; }
   .gallery { grid-template-columns: repeat(2, 1fr); grid-template-areas: "b b" "a e" "a f" "d c" "d c" "g h"; }
   .skills { grid-template-columns: 1fr; }
   .certs { grid-template-columns: repeat(3, 1fr); }
+  .life-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 640px) {
   body { font-size: 16px; }
