@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20">
+<link rel="stylesheet" href="style.css?v=23">
 </head>
 <body>
 
@@ -102,16 +102,11 @@
       <p>Мне 21, учусь на 4 курсе ГУАП по «Прикладной информатике». С июня 2025 года пишу бэкенд в стартапе
         <b>Нордкрофт</b> — приложении для рыбаков, которое работает в проде: от схемы БД и бизнес-логики до
         деплоя, CI/CD и разбора ошибок по логам.</p>
-      <p>Люблю брать задачу без готового ТЗ и вести её целиком — от проектирования до релиза.
+      <p>Стараюсь понимать, зачем делается задача: уточняю требования, предлагаю решение и довожу его до релиза.
         На хакатонах обычно отвечаю за бэкенд и за то, чтобы команда успела к защите.</p>
       <p>Сейчас хочу расти до <b>middle</b>: интересны высоконагруженные сервисы, распределённые системы,
         надёжная эксплуатация — мониторинг, тесты, code review.</p>
-    </div>
-    <div class="about-cards">
-      <div class="mini-card reveal"><div class="mini-k">Город</div><div class="mini-v">Санкт-Петербург</div></div>
-      <div class="mini-card reveal"><div class="mini-k">Формат</div><div class="mini-v">офис · гибрид · удалённо</div></div>
-      <div class="mini-card reveal"><div class="mini-k">Учёба</div><div class="mini-v">ГУАП, выпуск 2027</div></div>
-      <div class="mini-card reveal"><div class="mini-k">Английский</div><div class="mini-v">B2</div></div>
+      <p class="about-facts">Санкт-Петербург · офис, гибрид или удалённо · ГУАП, выпуск 2027 · английский B2</p>
     </div>
   </div>
 </section>
@@ -303,7 +298,7 @@
   </article>
 
   <article class="card lab-group single reveal">
-    <div class="lab-group-head"><div class="proj-ico">DB</div><h4>Бэкенд, базы данных и ML</h4></div>
+    <div class="lab-group-head"><h4>Бэкенд, базы данных и ML</h4></div>
     <ul class="lab-list">
       <li><b>Курсовая по БД: учёт рекламы на телеканале.</b> Спроектировал базу на PostgreSQL и написал к ней приложение: работа с данными, хранимые процедуры, графики и разграничение прав для четырёх ролей.</li>
       <li><b>Индексы в PostgreSQL.</b> Сравнил B-tree, Hash, GIN и BRIN через EXPLAIN ANALYZE: когда индекс реально ускоряет запрос, а когда планировщик его игнорирует.</li>
@@ -324,7 +319,7 @@
   </nav>
 
   <div class="timeline" id="timeline">
-    <div class="tl-item reveal top">
+    <div class="tl-item reveal">
       <div class="tl-date">окт 2026</div>
       <div class="tl-card" data-photos="img/vit-pitch.jpg|Питч в финале;img/vit-team.jpg|Команда в финале;img/vremyait.jpg|Сертификат" data-title="Хакатон «Время IT» · ГУАП × Звук">
         <div class="tl-head"><h4>Хакатон «Время IT» · ГУАП × Звук</h4><span class="pill accent">Финал</span></div>
@@ -359,14 +354,14 @@
         <p>Месяц акселерации, затем отбор на фестиваль — там представили Нордкрофт на стенде с демо приложения.</p>
       </div>
     </div>
-    <div class="tl-item reveal top">
+    <div class="tl-item reveal">
       <div class="tl-date">дек 2025</div>
       <div class="tl-card" data-photos="img/photo-stand.jpg|Стенд на выставке;img/yavdele.jpg|Сертификат" data-title="Предпринимательский курс «Я в деле» · 9 сезон">
         <div class="tl-head"><h4>Предпринимательский курс «Я в деле» · 9 сезон</h4><span class="pill accent">3 место</span></div>
         <p>Федеральная программа развития молодёжного предпринимательства: 3 место в базовом треке. На выставке проектов показывали Нордкрофт на стенде — демо, бизнес-модель и цели до 2028 года.</p>
       </div>
     </div>
-    <div class="tl-item reveal top">
+    <div class="tl-item reveal">
       <div class="tl-date">дек 2025</div>
       <div class="tl-card" data-photos="img/photo-technopiter.jpg|Финал — 2 место;img/technopiter.jpg|Сертификат" data-title="Акселератор ТехноПитер · ГУАП">
         <div class="tl-head"><h4>Акселератор ТехноПитер · ГУАП</h4><span class="pill accent">2 место</span></div>
@@ -410,16 +405,16 @@
 <!-- ============ SKILLS ============ -->
 <section class="wrap section" id="skills">
   <div class="section-head reveal"><span class="section-num">06</span><h2>Навыки</h2></div>
-  <div class="skills">
-    <div class="skill-group reveal"><h4>Языки</h4><div class="tags"><span class="hot">C#</span><span class="hot">Python</span><span>SQL</span><span>TypeScript</span><span>C++</span></div></div>
-    <div class="skill-group reveal"><h4>.NET</h4><div class="tags"><span class="hot">ASP.NET Core</span><span class="hot">EF Core</span><span>LINQ</span><span>async/await</span><span>gRPC</span><span>Clean Architecture</span><span>Unit Testing</span></div></div>
-    <div class="skill-group reveal"><h4>Python и ML</h4><div class="tags"><span class="hot">FastAPI</span><span>SQLAlchemy</span><span>pandas</span><span>NumPy</span><span>LightGBM</span><span>scikit-learn</span></div></div>
-    <div class="skill-group reveal"><h4>Данные и очереди</h4><div class="tags"><span class="hot">PostgreSQL</span><span>Redis</span><span>RabbitMQ</span><span>S3 / MinIO</span><span>pgvector</span><span>MS SQL</span></div></div>
-    <div class="skill-group reveal"><h4>Инфраструктура</h4><div class="tags"><span class="hot">Docker</span><span>Docker Compose</span><span>Nginx</span><span>Linux</span><span>GitHub Actions</span><span>SSL/TLS</span></div></div>
-    <div class="skill-group reveal"><h4>API и интеграции</h4><div class="tags"><span>REST</span><span>JWT / OAuth</span><span>Swagger</span><span>WebSocket</span><span>YooKassa</span><span>amoCRM</span></div></div>
-    <div class="skill-group reveal"><h4>Процессы</h4><div class="tags"><span>Git, PR, code review</span><span>Kanban</span><span>Postman</span></div></div>
-    <div class="skill-group reveal"><h4>AI в работе</h4><div class="tags"><span class="hot">Claude Code</span><span>LLM в продуктах</span><span>GigaChat API</span></div></div>
-  </div>
+  <dl class="skill-rows reveal">
+    <div><dt>Языки</dt><dd>C#, Python, SQL, TypeScript, C++</dd></div>
+    <div><dt>.NET</dt><dd>ASP.NET Core, EF Core, LINQ, async/await, gRPC, Clean Architecture, Unit Testing</dd></div>
+    <div><dt>Python и ML</dt><dd>FastAPI, SQLAlchemy, pandas, NumPy, LightGBM, scikit-learn</dd></div>
+    <div><dt>Данные и очереди</dt><dd>PostgreSQL, Redis, RabbitMQ, S3 / MinIO, pgvector, MS SQL</dd></div>
+    <div><dt>Инфраструктура</dt><dd>Docker, Docker Compose, Nginx, Linux, GitHub Actions, SSL/TLS</dd></div>
+    <div><dt>API и интеграции</dt><dd>REST, JWT / OAuth, Swagger, WebSocket, YooKassa, amoCRM</dd></div>
+    <div><dt>Процессы</dt><dd>Git, GitHub Flow, code review, Agile / Kanban, Postman</dd></div>
+    <div><dt>AI в работе</dt><dd>Claude Code, LLM в продуктах, GigaChat API</dd></div>
+  </dl>
 
   <div class="edu reveal">
     <h3 class="sub-title">Образование и курсы</h3>
@@ -438,27 +433,22 @@
   <p class="section-lead reveal">Что ещё про меня стоит знать.</p>
   <div class="life-grid">
     <article class="life-card big reveal">
-      <div class="life-emoji">🔍</div>
       <h4>Разбираться, как всё устроено</h4>
       <p>Люблю докопаться до того, как что-то работает внутри, и найти лучшее решение в рамках ограничений: самое удачное железо за свой бюджет, самую простую архитектуру под задачу.</p>
     </article>
     <article class="life-card reveal">
-      <div class="life-emoji">♟️</div>
       <h4>Шахматы</h4>
       <p>Люблю играть в шахматы — нравится считать варианты на несколько ходов вперёд.</p>
     </article>
     <article class="life-card reveal">
-      <div class="life-emoji">🧩</div>
       <h4>Конструкторы</h4>
       <p>Собираю разные конструкторы, а раньше занимался авиамоделированием. Нравится, как из простых деталей получается работающая штука.</p>
     </article>
     <article class="life-card reveal">
-      <div class="life-emoji">🎸</div>
       <h4>Гитара</h4>
       <p>Играю на гитаре — и даже написал себе для неё тренажёр в LifeHub.</p>
     </article>
     <article class="life-card reveal">
-      <div class="life-emoji">🥾</div>
       <h4>Походы</h4>
       <p>Лес, рюкзак, тропа — лучший способ перезагрузиться.</p>
     </article>

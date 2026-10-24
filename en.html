@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20">
+<link rel="stylesheet" href="style.css?v=23">
 </head>
 <body>
 
@@ -103,16 +103,11 @@
         Instrumentation). Since June 2025 I've been building the backend at <b>Nordkroft</b>, a fishing trip
         app that runs in production: from the database schema and business logic to deployment, CI/CD and
         digging through logs when something breaks.</p>
-      <p>I like taking a task without a ready spec and owning it end to end — from design to release.
+      <p>I try to understand why a task matters: I clarify requirements, propose a solution and see it through to release.
         At hackathons I usually take the backend and make sure the team is ready for the final pitch.</p>
       <p>Now I want to grow to <b>middle</b> level: I'm interested in high-load services, distributed systems
         and reliable operations — monitoring, testing and code review.</p>
-    </div>
-    <div class="about-cards">
-      <div class="mini-card reveal"><div class="mini-k">City</div><div class="mini-v">Saint Petersburg</div></div>
-      <div class="mini-card reveal"><div class="mini-k">Format</div><div class="mini-v">office · hybrid · remote</div></div>
-      <div class="mini-card reveal"><div class="mini-k">University</div><div class="mini-v">SUAI, class of 2027</div></div>
-      <div class="mini-card reveal"><div class="mini-k">English</div><div class="mini-v">B2</div></div>
+      <p class="about-facts">Saint Petersburg · office, hybrid or remote · SUAI, class of 2027 · English B2</p>
     </div>
   </div>
 </section>
@@ -304,7 +299,7 @@
   </article>
 
   <article class="card lab-group single reveal">
-    <div class="lab-group-head"><div class="proj-ico">DB</div><h4>Backend, databases and ML</h4></div>
+    <div class="lab-group-head"><h4>Backend, databases and ML</h4></div>
     <ul class="lab-list">
       <li><b>Database course project: ad tracking for a TV channel.</b> Designed a PostgreSQL database and built an app on top of it: data management, stored procedures, charts and access control for four roles.</li>
       <li><b>PostgreSQL indexes.</b> Compared B-tree, Hash, GIN and BRIN with EXPLAIN ANALYZE: when an index really speeds up a query and when the planner ignores it.</li>
@@ -325,7 +320,7 @@
   </nav>
 
   <div class="timeline" id="timeline">
-    <div class="tl-item reveal top">
+    <div class="tl-item reveal">
       <div class="tl-date">Oct 2026</div>
       <div class="tl-card" data-photos="img/vit-pitch.jpg|Pitching in the final;img/vit-team.jpg|Team in the final;img/vremyait.jpg|Certificate" data-title="Vremya IT hackathon · SUAI × Zvuk">
         <div class="tl-head"><h4>Vremya IT hackathon · SUAI × Zvuk</h4><span class="pill accent">Final</span></div>
@@ -360,14 +355,14 @@
         <p>A month of acceleration, then selection for the festival, where we showcased Nordkroft at a booth with a live demo.</p>
       </div>
     </div>
-    <div class="tl-item reveal top">
+    <div class="tl-item reveal">
       <div class="tl-date">Dec 2025</div>
       <div class="tl-card" data-photos="img/photo-stand.jpg|Booth at the expo;img/yavdele.jpg|Certificate" data-title="Ya v Dele entrepreneurship course · season 9">
         <div class="tl-head"><h4>Ya v Dele entrepreneurship course · season 9</h4><span class="pill accent">3rd place</span></div>
         <p>A federal youth entrepreneurship program: 3rd place in the base track. At the project expo we showed Nordkroft at a booth — demo, business model and goals through 2028.</p>
       </div>
     </div>
-    <div class="tl-item reveal top">
+    <div class="tl-item reveal">
       <div class="tl-date">Dec 2025</div>
       <div class="tl-card" data-photos="img/photo-technopiter.jpg|Final — 2nd place;img/technopiter.jpg|Certificate" data-title="TechnoPiter accelerator · SUAI">
         <div class="tl-head"><h4>TechnoPiter accelerator · SUAI</h4><span class="pill accent">2nd place</span></div>
@@ -411,16 +406,16 @@
 <!-- ============ SKILLS ============ -->
 <section class="wrap section" id="skills">
   <div class="section-head reveal"><span class="section-num">06</span><h2>Skills</h2></div>
-  <div class="skills">
-    <div class="skill-group reveal"><h4>Languages</h4><div class="tags"><span class="hot">C#</span><span class="hot">Python</span><span>SQL</span><span>TypeScript</span><span>C++</span></div></div>
-    <div class="skill-group reveal"><h4>.NET</h4><div class="tags"><span class="hot">ASP.NET Core</span><span class="hot">EF Core</span><span>LINQ</span><span>async/await</span><span>gRPC</span><span>Clean Architecture</span><span>Unit Testing</span></div></div>
-    <div class="skill-group reveal"><h4>Python and ML</h4><div class="tags"><span class="hot">FastAPI</span><span>SQLAlchemy</span><span>pandas</span><span>NumPy</span><span>LightGBM</span><span>scikit-learn</span></div></div>
-    <div class="skill-group reveal"><h4>Data and queues</h4><div class="tags"><span class="hot">PostgreSQL</span><span>Redis</span><span>RabbitMQ</span><span>S3 / MinIO</span><span>pgvector</span><span>MS SQL</span></div></div>
-    <div class="skill-group reveal"><h4>Infrastructure</h4><div class="tags"><span class="hot">Docker</span><span>Docker Compose</span><span>Nginx</span><span>Linux</span><span>GitHub Actions</span><span>SSL/TLS</span></div></div>
-    <div class="skill-group reveal"><h4>APIs and integrations</h4><div class="tags"><span>REST</span><span>JWT / OAuth</span><span>Swagger</span><span>WebSocket</span><span>YooKassa</span><span>amoCRM</span></div></div>
-    <div class="skill-group reveal"><h4>Process</h4><div class="tags"><span>Git, PRs, code review</span><span>Kanban</span><span>Postman</span></div></div>
-    <div class="skill-group reveal"><h4>AI at work</h4><div class="tags"><span class="hot">Claude Code</span><span>LLMs in products</span><span>GigaChat API</span></div></div>
-  </div>
+  <dl class="skill-rows reveal">
+    <div><dt>Languages</dt><dd>C#, Python, SQL, TypeScript, C++</dd></div>
+    <div><dt>.NET</dt><dd>ASP.NET Core, EF Core, LINQ, async/await, gRPC, Clean Architecture, Unit Testing</dd></div>
+    <div><dt>Python and ML</dt><dd>FastAPI, SQLAlchemy, pandas, NumPy, LightGBM, scikit-learn</dd></div>
+    <div><dt>Data and queues</dt><dd>PostgreSQL, Redis, RabbitMQ, S3 / MinIO, pgvector, MS SQL</dd></div>
+    <div><dt>Infrastructure</dt><dd>Docker, Docker Compose, Nginx, Linux, GitHub Actions, SSL/TLS</dd></div>
+    <div><dt>APIs and integrations</dt><dd>REST, JWT / OAuth, Swagger, WebSocket, YooKassa, amoCRM</dd></div>
+    <div><dt>Process</dt><dd>Git, GitHub Flow, code review, Agile / Kanban, Postman</dd></div>
+    <div><dt>AI at work</dt><dd>Claude Code, LLMs in products, GigaChat API</dd></div>
+  </dl>
 
   <div class="edu reveal">
     <h3 class="sub-title">Education and courses</h3>
@@ -439,27 +434,22 @@
   <p class="section-lead reveal">A few more things about me.</p>
   <div class="life-grid">
     <article class="life-card big reveal">
-      <div class="life-emoji">🔍</div>
       <h4>Figuring out how things work</h4>
       <p>I like digging into how something works inside and finding the best solution within constraints: the best hardware for my budget, the simplest architecture for the task.</p>
     </article>
     <article class="life-card reveal">
-      <div class="life-emoji">♟️</div>
       <h4>Chess</h4>
       <p>I enjoy playing chess — I like calculating several moves ahead.</p>
     </article>
     <article class="life-card reveal">
-      <div class="life-emoji">🧩</div>
       <h4>Building kits</h4>
       <p>I build all kinds of construction kits and used to do aeromodelling. I like how simple parts turn into something that works.</p>
     </article>
     <article class="life-card reveal">
-      <div class="life-emoji">🎸</div>
       <h4>Guitar</h4>
       <p>I play guitar — and even built myself a trainer for it in LifeHub.</p>
     </article>
     <article class="life-card reveal">
-      <div class="life-emoji">🥾</div>
       <h4>Hiking</h4>
       <p>Forest, backpack, trail — the best way to reset.</p>
     </article>
