@@ -130,10 +130,12 @@
       <div class="exp-title">Nordkroft <span>· C#/.NET Backend Developer</span></div>
       <div class="exp-sub">B2C startup, <b>5,000+ users</b> · team of 4 · <a href="https://app.nordkroft.ru" target="_blank" rel="noopener">app.nordkroft.ru ↗</a></div>
       <ul class="bullets exp-list">
-        <li><b>Own the product backend</b>: two ASP.NET Core services on PostgreSQL — map and spots, reports, profiles, admin panel, and the bridge to the spot-search ML service.</li>
-        <li><b>Integrated YooKassa</b>: webhooks, payment verification, in-app purchases.</li>
-        <li><b>Built a service that collects reports</b> from Telegram channels: real-time processing and deduplication.</li>
-        <li><b>Set up and maintain the infrastructure</b>: Docker Compose on a VPS, Nginx, CI/CD on GitHub Actions, backups, incident response.</li>
+        <li><b>Own the product backend</b>: two ASP.NET Core services on PostgreSQL (280+ endpoints, 50+ entities, 70+ migrations) — map and spots, reports, profiles, admin panel, and the bridge to the spot-search ML service.</li>
+        <li><b>Built authentication</b>: JWT with refresh tokens, Yandex sign-in, email code verification, guest access.</li>
+        <li><b>Integrated YooKassa and amoCRM</b>: webhooks with server-side payment re-verification, in-app purchases, subscriptions with a background expiry checker; automatic lead handoff to a partner's sales funnel.</li>
+        <li><b>Built a service that collects reports</b> from Telegram channels: real-time processing, a comparison queue and deduplication. It also hosts the admin backend with analytics and moderation.</li>
+        <li><b>Built photo handling</b>: storage in MinIO/S3, signed links with a limited lifetime, several image sizes for different screens.</li>
+        <li><b>Set up and maintain the infrastructure</b>: 13 containers in Docker Compose on a VPS, Nginx, CI/CD on GitHub Actions that deploys only the services that changed, backups, incident response.</li>
       </ul>
       <div class="tags">
         <span>C#</span><span>.NET 9</span><span>ASP.NET Core</span><span>EF Core</span><span>PostgreSQL</span><span>Redis</span><span>MinIO / S3</span><span>YooKassa</span><span>Docker</span><span>Nginx</span><span>GitHub Actions</span>
