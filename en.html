@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=12">
+<link rel="stylesheet" href="style.css?v=13">
 </head>
 <body>
 
@@ -128,18 +128,20 @@
     </div>
     <div class="exp-body">
       <div class="exp-title">Nordkroft <span>· C#/.NET Backend Developer</span></div>
-      <div class="exp-sub">B2C product startup, team of 4 · <a href="https://app.nordkroft.ru" target="_blank" rel="noopener">app.nordkroft.ru ↗</a></div>
+      <div class="exp-sub">B2C product startup, team of 4, 5,000+ users · <a href="https://app.nordkroft.ru" target="_blank" rel="noopener">app.nordkroft.ru ↗</a></div>
+      <p class="exp-lead">I wrote and run almost the entire backend: <b>two ASP.NET Core services</b> — ~47k lines of C#,
+        280+ endpoints, 50+ entities in PostgreSQL — plus the infrastructure they run on.</p>
       <ul class="bullets">
-        <li><b>REST API and business logic</b> on ASP.NET Core: users, map and spots, catch reports, payments.</li>
-        <li><b>PostgreSQL + EF Core</b>: I design the data schema and write LINQ queries and migrations.</li>
-        <li><b>Authentication</b>: JWT with refresh tokens, guest access, external sign-in, email code verification.</li>
-        <li><b>Integrations</b>: YooKassa payments that unlock paid content, lead handoff to a partner's amoCRM.</li>
-        <li><b>Performance</b>: Redis and in-memory caching, images via MinIO/S3 and presigned URLs.</li>
-        <li><b>Telegram data</b>: batch and real-time processing of reports, normalization and deduplication.</li>
-        <li><b>Infrastructure for all services</b>: Docker Compose, Nginx, Linux, SSL, CI/CD on GitHub Actions, deployments and production debugging.</li>
+        <li><b>Core API</b>: map and spots, catch reports and the feed, routes, guides, boat slips, profiles. EF Core with 70+ migrations.</li>
+        <li><b>Semantic spot search</b>: spot embeddings in Redis with a vector index (HNSW, cosine similarity) and an ML service for natural-language queries.</li>
+        <li><b>Authentication</b>: JWT with refresh tokens, Yandex and Google sign-in, Telegram Mini App with initData signature checks, email codes, guest access.</li>
+        <li><b>Payments</b>: YooKassa with webhooks and server-side payment re-verification, in-app purchases and subscriptions with a background expiry checker.</li>
+        <li><b>Data and admin service</b>: real-time parsing of fishing Telegram channels, a comparison queue and report deduplication, growth and behavior analytics, moderation, scheduled database backups.</li>
+        <li><b>Photos</b>: MinIO/S3, signed expiring links, several sizes for previews, cards and detail screens.</li>
+        <li><b>Infrastructure on a VPS</b>: Docker Compose with 13 containers, Nginx and Certbot, CI/CD on GitHub Actions that ships only the services that changed. When production goes down, I track the cause through logs and bring it back fast.</li>
       </ul>
       <div class="tags">
-        <span>C#</span><span>.NET 9</span><span>ASP.NET Core</span><span>EF Core</span><span>PostgreSQL</span><span>Redis</span><span>S3</span><span>Docker</span><span>Nginx</span><span>GitHub Actions</span>
+        <span>C#</span><span>.NET 9</span><span>ASP.NET Core</span><span>EF Core</span><span>PostgreSQL</span><span>Redis</span><span>MinIO / S3</span><span>YooKassa</span><span>Docker</span><span>Nginx</span><span>GitHub Actions</span>
       </div>
     </div>
   </article>

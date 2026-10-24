@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=12">
+<link rel="stylesheet" href="style.css?v=13">
 </head>
 <body>
 
@@ -127,18 +127,20 @@
     </div>
     <div class="exp-body">
       <div class="exp-title">Нордкрофт <span>· C#/.NET Backend Developer</span></div>
-      <div class="exp-sub">Продуктовый B2C-стартап, команда из 4 человек · <a href="https://app.nordkroft.ru" target="_blank" rel="noopener">app.nordkroft.ru ↗</a></div>
+      <div class="exp-sub">Продуктовый B2C-стартап, команда из 4 человек, 5 000+ пользователей · <a href="https://app.nordkroft.ru" target="_blank" rel="noopener">app.nordkroft.ru ↗</a></div>
+      <p class="exp-lead">Написал и веду почти весь бэкенд: <b>два сервиса на ASP.NET Core</b> — ~47 тыс. строк C#,
+        280+ эндпоинтов, 50+ сущностей в PostgreSQL — и инфраструктуру, на которой они работают.</p>
       <ul class="bullets">
-        <li><b>REST API и бизнес-логика</b> на ASP.NET Core: пользователи, карта и места, отчёты с водоёмов, платежи.</li>
-        <li><b>PostgreSQL + EF Core</b>: проектирую схему данных, пишу LINQ-запросы и миграции.</li>
-        <li><b>Авторизация</b>: JWT и refresh-токены, гостевой доступ, внешний вход, подтверждение по email-коду.</li>
-        <li><b>Интеграции</b>: оплата через YooKassa с выдачей доступа к контенту, передача заявок партнёру в amoCRM.</li>
-        <li><b>Производительность</b>: Redis и in-memory cache, изображения через MinIO/S3 и presigned URLs.</li>
-        <li><b>Данные из Telegram</b>: batch- и realtime-обработка отчётов, нормализация и дедупликация.</li>
-        <li><b>Инфраструктура всех сервисов</b>: Docker Compose, Nginx, Linux, SSL, CI/CD на GitHub Actions, деплой и прод-диагностика.</li>
+        <li><b>Основной API</b>: карта и места, отчёты с водоёмов и лента, маршруты, гиды, слипы, профили. EF Core и 70+ миграций.</li>
+        <li><b>Семантический поиск мест</b>: эмбеддинги мест в Redis с векторным индексом (HNSW, косинусная близость) и ML-сервис для запросов на естественном языке.</li>
+        <li><b>Авторизация</b>: JWT с refresh-токенами, вход через Яндекс и Google, Telegram Mini App с проверкой подписи initData, email-коды, гостевой доступ.</li>
+        <li><b>Платежи</b>: YooKassa с вебхуками и повторной проверкой платежа через API, внутренние покупки и подписки с фоновой проверкой сроков.</li>
+        <li><b>Сервис данных и админки</b>: парсинг рыболовных Telegram-каналов в реальном времени, очередь сравнения и дедупликация отчётов, аналитика роста и поведения, модерация, бэкапы базы по расписанию.</li>
+        <li><b>Фото</b>: MinIO/S3, подписанные ссылки с истечением, несколько размеров под превью, карточку и детальный экран.</li>
+        <li><b>Инфраструктура на VPS</b>: Docker Compose из 13 контейнеров, Nginx и Certbot, CI/CD на GitHub Actions, который выкатывает только изменённые сервисы. Если прод падает — быстро нахожу причину по логам и поднимаю.</li>
       </ul>
       <div class="tags">
-        <span>C#</span><span>.NET 9</span><span>ASP.NET Core</span><span>EF Core</span><span>PostgreSQL</span><span>Redis</span><span>S3</span><span>Docker</span><span>Nginx</span><span>GitHub Actions</span>
+        <span>C#</span><span>.NET 9</span><span>ASP.NET Core</span><span>EF Core</span><span>PostgreSQL</span><span>Redis</span><span>MinIO / S3</span><span>YooKassa</span><span>Docker</span><span>Nginx</span><span>GitHub Actions</span>
       </div>
     </div>
   </article>

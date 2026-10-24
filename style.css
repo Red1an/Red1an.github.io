@@ -234,7 +234,9 @@ b { font-weight: 600; }
 .exp-place { color: var(--muted); font-size: 14px; margin-top: 4px; }
 .exp-title { font: 700 26px var(--f-head); letter-spacing: -.02em; }
 .exp-title span { font: 500 18px var(--f-body); color: var(--muted); letter-spacing: 0; }
-.exp-sub { color: var(--muted); margin: 6px 0 20px; font-size: 15px; }
+.exp-sub { color: var(--muted); margin: 6px 0 16px; font-size: 15px; }
+.exp-lead { font-size: 17px; margin-bottom: 18px; }
+.exp-lead b { color: var(--accent); }
 .exp-sub a { color: var(--accent); }
 .bullets { list-style: none; display: grid; gap: 10px; margin-bottom: 24px; }
 .bullets li { position: relative; padding-left: 22px; color: var(--muted); }
