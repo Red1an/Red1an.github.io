@@ -166,3 +166,13 @@ const videoIo = new IntersectionObserver(entries => {
 if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
   document.querySelectorAll('video[data-inview]').forEach(v => videoIo.observe(v));
 }
+
+// ---------- scroll progress ----------
+const progress = document.getElementById('progress');
+const updateProgress = () => {
+  const max = document.documentElement.scrollHeight - innerHeight;
+  progress.style.transform = `scaleX(${max > 0 ? scrollY / max : 0})`;
+};
+addEventListener('scroll', updateProgress, { passive: true });
+addEventListener('resize', updateProgress);
+updateProgress();
